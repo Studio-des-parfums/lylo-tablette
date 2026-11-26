@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder simple pour l'avatar IA (remplace /avatar-f.jpg et /avatar-h.jpg côté web).
+     Remplacez par les vraies images (importées comme drawable PNG/JPG) pour une fidélité totale. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="#D7CDC6" />
+</shape>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Certificats standard requis par le Google Fonts Provider (androidx.compose.ui.text.googlefonts)
+  pour vérifier l'app com.google.android.gms qui sert les polices. Ce sont les empreintes
+  publiques officielles documentées par Google pour les polices "downloadable" — identiques
+  pour toutes les apps Android, aucune clé privée n'est nécessaire ici.
+  Source : https://github.com/android/user-interface-samples (downloadable-fonts sample) /
+  https://developer.android.com/develop/ui/views/text-and-emoji/downloadable-fonts
+-->
+<resources>
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            MIIEqDCCA5CgAwIBAgIJAPzMKfWCZWEQMA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajftp3Y+jvGPdb9GLwvKUZm/OGr5ppL9EBLwXCE3PgTfmoPRXOFRxbSf4Q+2vnf6zycqpMKtVAzDMWi9uUn5U2q0zdIRDmvNr8fbEd7CvHnMV6MgxDyvSAn4Cd/wu3rFmiDeYCk+ZAqRLtq/nZWyRUYFnrDML3g6VjjSKGO2VBLTFqXpaZa3iaFxWuJVQPXH1eqTVsu6+8m7c/UKAeVdCq1tSs/qeydzVn3nsuMHFVJRlYqcyIqXBRvNVDddFcTFwSPTZoq5tqhSyEsuwCggEC
+        </item>
+    </string-array>
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajftp3Y+jvGPdb9GLwvKUZm/OGr5ppL9EBLwXCE3PgTfmoPRXOFRxbSf4Q+2vnf6zycqpMKtVAzDMWi9uUn5U2q0zdIRDmvNr8fbEd7CvHnMV6MgxDyvSAn4Cd/wu3rFmiDeYCk+ZAqRLtq/nZWyRUYFnrDMxwzYY5qO/n1JCmuTB0GmjXqAOwOxNn/pJ7VpTz7/AgMBAAGjgdkwgdYwHQYDVR0OBBYEFPvwUCT6VDMXbdVzM9Fw6VZTPUw5MIGmBgNVHSMEgZ4wgZuAFPvwUCT6VDMXbdVzM9Fw6VZTPUw5oXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt78CjcOD1M4NyfDe/gsZtaGw0rGrLkKZBH5cd7sn+aBAxT7+E3IPn/y7t7RGDXfDaHTeECMzKPz/Fd6xF6vJp
+        </item>
+    </string-array>
+</resources>

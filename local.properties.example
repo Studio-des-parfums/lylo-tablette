@@ -1,0 +1,23 @@
+# Copie ce fichier en "local.properties" (non versionné) et complète les valeurs.
+# Android Studio y ajoutera automatiquement sdk.dir=... à l'ouverture du projet.
+
+# ── Backend Lylo ──────────────────────────────────────────────────────────
+# Equivalent de NEXT_PUBLIC_API_URL côté web. URL de base de l'API FastAPI/Node
+# (endpoints /api/session/*, /api/questions, /api/formulas/*, /printers/*, /lookup...).
+LYLO_API_BASE_URL=https://lylo-back-production-78a9.up.railway.app
+
+# Active les données mockées (formules + questions statiques) sans appeler le backend.
+# Equivalent de NEXT_PUBLIC_DEV_MODE.
+LYLO_DEV_MODE=false
+
+# ── Google OAuth (Credential Manager / Google Identity Services) ──────────
+# Web Client ID (type "Web application" dans Google Cloud Console) — c'est CE client id
+# qui doit être utilisé comme serverClientId dans GetGoogleIdOption, pas un client id Android.
+# Reprend la même valeur que NEXT_PUBLIC_GOOGLE_CLIENT_ID côté web pour que le back
+# (qui valide le token) accepte les connexions venant de la tablette.
+LYLO_GOOGLE_WEB_CLIENT_ID=51707488835-jh0q9u70r28f2qu9ab5ee8k6abttp9d0.apps.googleusercontent.com
+
+# ── Marque ────────────────────────────────────────────────────────────────
+# Equivalent de NEXT_PUBLIC_BRAND : slug de la marque côté back (questionnaire, quota, formules).
+# Thèmes visuels embarqués : "lylo" (défaut) et "help" ; toute autre marque utilise le thème Lylo.
+LYLO_BRAND=lylo

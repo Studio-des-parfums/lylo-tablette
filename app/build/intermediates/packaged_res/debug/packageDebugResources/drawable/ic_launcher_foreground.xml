@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder simple : un "L" stylisé. Remplacer par le vrai logo SDP (logo-sdp.png côté web)
+     en l'import via Image Asset Studio dans Android Studio pour un rendu fidèle. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FDFBF9"
+        android:pathData="M40,30 L48,30 L48,70 L74,70 L74,78 L40,78 Z" />
+</vector>

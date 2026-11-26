@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Autorise uniquement le trafic HTTPS en production ; le domaine ngrok éventuel utilisé
+     en développement local (voir .env côté web) reste compatible car il sert en HTTPS. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="8397015543330865059" name="android.credentials.TYPE_PASSWORD_CREDENTIAL">"Passwort"</string>
+    <string msgid="3929015085059320822" name="androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL">"Passkey"</string>
+    <string name="app_name">Lylo</string>
+    <string name="auth_close">Schließen</string>
+    <string name="auth_email_placeholder">Ihre E-Mail-Adresse</string>
+    <string name="auth_email_submit">Mit E-Mail fortfahren</string>
+    <string name="auth_error">Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.</string>
+    <string name="auth_google_signin">Mit Google anmelden</string>
+    <string name="auth_invalid_email">Bitte geben Sie eine gültige E-Mail-Adresse ein.</string>
+    <string name="auth_loading">Überprüfung...</string>
+    <string name="auth_logout">Abmelden</string>
+    <string name="auth_modal_subtitle">Melden Sie sich an, um auf Ihren Bereich zuzugreifen</string>
+    <string name="auth_modal_title">Anmelden</string>
+    <string name="auth_no_sessions">Sie haben keine verbleibenden Sitzungen.</string>
+    <string name="auth_or_divider">oder</string>
+    <string name="auth_unauthorized">Zugriff verweigert. Ihr Konto ist nicht autorisiert.</string>
+    <string name="auth_welcome">Hallo</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Annehmen"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Ablehnen"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Auflegen"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Eingehender Anruf"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Aktueller Anruf"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Filter für eingehenden Anruf"</string>
+    <string name="choice_grid_submitted">Gesendet!</string>
+    <string name="choice_grid_validate">Bestätigen</string>
+    <string msgid="406453423630273620" name="close_drawer">"Navigationsmenü schließen"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"Tabelle schließen"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aktivieren</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s funktioniert erst nach der Aktivierung der Google Play-Dienste.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play-Dienste aktivieren</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Installieren</string>
+    <string name="common_google_play_services_install_text">Zur Nutzung von %1$s sind die Google Play-Dienste erforderlich, die auf deinem Gerät nicht installiert sind.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play-Dienste installieren</string>
+    <string name="common_google_play_services_notification_channel_name">Verfügbarkeit von Google Play-Diensten</string>
+    <string name="common_google_play_services_notification_ticker">Fehler bei Zugriff auf Google Play-Dienste</string>
+    <string name="common_google_play_services_unknown_issue">%1$s hat Probleme mit Google Play-Diensten. Bitte versuche es noch einmal.</string>
+    <string name="common_google_play_services_unsupported_text">Zur Nutzung von %1$s sind Google Play-Dienste erforderlich, die auf deinem Gerät nicht unterstützt werden.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Aktualisieren</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s wird nur ausgeführt, wenn du die Google Play-Dienste aktualisierst.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play-Dienste aktualisieren</string>
+    <string name="common_google_play_services_updating_text">Zur Nutzung von %1$s sind Google Play-Dienste erforderlich, die gerade aktualisiert werden.</string>
+    <string name="common_google_play_services_wear_update_text">Eine neue Version der Google Play-Dienste wird benötigt. Diese wird in Kürze automatisch aktualisiert.</string>
+    <string name="common_open_on_phone">Auf Smartphone öffnen</string>
+    <string name="common_signin_button_text">Anmelden</string>
+    <string name="common_signin_button_text_long">Über Google anmelden</string>
+    <string name="configure_avatar_hint">Deaktivieren Sie diese Option, wenn Ihre Verbindung langsam ist. Führen Sie den Test unten durch, um dies zu überprüfen.</string>
+    <string name="configure_avatar_off">Nur Audio</string>
+    <string name="configure_avatar_on">Avatar aktiviert</string>
+    <string name="configure_avatar_title">Video-Avatar</string>
+    <string name="configure_brand">Le studio des parfums</string>
+    <string name="configure_choose_printer">Drucker auswählen</string>
+    <string name="configure_color_bleu">Blau</string>
+    <string name="configure_color_jaune">Gelb</string>
+    <string name="configure_color_orange">Orange</string>
+    <string name="configure_color_rose">Rosa</string>
+    <string name="configure_color_rouge">Rot</string>
+    <string name="configure_color_turquoise">Türkis</string>
+    <string name="configure_color_vert">Grün</string>
+    <string name="configure_color_violet">Violett</string>
+    <string name="configure_deep">Tiefgehend</string>
+    <string name="configure_depth_aria_label">Mehr über die Analysetiefe erfahren</string>
+    <string name="configure_depth_info">Entspricht der Anzahl der von der KI gestellten Fragen. Je mehr Fragen, desto präziser und persönlicher die Analyse.</string>
+    <string name="configure_depth_title">Analysetiefe</string>
+    <string name="configure_display_title">Anzeige</string>
+    <string name="configure_duo_no">Nein</string>
+    <string name="configure_duo_title">Duo-Modus</string>
+    <string name="configure_duo_yes">Ja</string>
+    <string name="configure_female">Weiblich</string>
+    <string name="configure_footer">Erstellt von Le Studio Des Parfums © 2025</string>
+    <string name="configure_fullscreen_enter">Vollbild</string>
+    <string name="configure_fullscreen_exit">Vollbild verlassen</string>
+    <string name="configure_input_mode_aria_label">Mehr über den Antwortmodus erfahren</string>
+    <string name="configure_input_mode_click">Hybrid</string>
+    <string name="configure_input_mode_click_desc">Klicken Sie auf die Karten</string>
+    <string name="configure_input_mode_info">Sprache: Sie und die KI unterhalten sich während des gesamten Gesprächs laut.\n\nHybrid: Sie klicken auf die vorgeschlagenen Optionen, um zu antworten, und sprechen nur für den Rest des Erlebnisses. Ideal in lauten Umgebungen.\n\nVisuell: keine Sprache. Sie lesen die Fragen und klicken Ihre Antworten. Formeln werden direkt erstellt.</string>
+    <string name="configure_input_mode_info_tablet">Sprache: Sie und die KI unterhalten sich während des gesamten Gesprächs laut.\n\nVisuell: keine Sprache. Sie lesen die Fragen und klicken Ihre Antworten. Formeln werden direkt erstellt.</string>
+    <string name="configure_input_mode_quiz">Visuell</string>
+    <string name="configure_input_mode_quiz_desc">Lesen &amp; klicken</string>
+    <string name="configure_input_mode_title">Antwortmodus</string>
+    <string name="configure_input_mode_voice">Sprache</string>
+    <string name="configure_input_mode_voice_desc">Antworten Sie laut</string>
+    <string name="configure_label">Konfiguration</string>
+    <string name="configure_language_available">verfügbare Sprache(n)</string>
+    <string name="configure_language_change">Ändern</string>
+    <string name="configure_language_close">Schließen</string>
+    <string name="configure_language_coming_soon">Demnächst verfügbar</string>
+    <string name="configure_language_modal_subtitle">Wählen Sie die von der KI gesprochene Sprache</string>
+    <string name="configure_language_modal_title">Wählen Sie Ihre Sprache</string>
+    <string name="configure_language_title">KI-Sprache</string>
+    <string name="configure_male">Männlich</string>
+    <string name="configure_mode_aria_label">Mehr über die Modi erfahren</string>
+    <string name="configure_mode_discovery">Entdeckung</string>
+    <string name="configure_mode_discovery_desc">Die KI möchte mehr über Sie erfahren – Ihren Geschmack, Ihre Persönlichkeit und Erinnerungen –, um einen Duft zu kreieren, der wirklich widerspiegelt, wer Sie sind.</string>
+    <string name="configure_mode_guided">Geführt</string>
+    <string name="configure_mode_guided_desc">Die KI konzentriert sich auf Schlüsselfragen, um Ihre olfaktorischen Formeln schnell und effizient zu erstellen.</string>
+    <string name="configure_mode_title">KI-Modus</string>
+    <string name="configure_participant_color_error">Jeder Teilnehmer muss eine andere Farbe wählen.</string>
+    <string name="configure_participant_color_title">Farbe jedes Teilnehmers</string>
+    <string name="configure_participant_label">Teilnehmer {n}</string>
+    <string name="configure_persona_title">Auswahl der KI-Persona</string>
+    <string name="configure_question_count_title">Anzahl der Fragen</string>
+    <string name="configure_quick">Schnell</string>
+    <string name="configure_standard">Standard</string>
+    <string name="configure_start">Starten</string>
+    <string name="configure_subtitle">Optimieren Sie Ihren olfaktorischen KI-Berater</string>
+    <string name="configure_title">Passen Sie Ihr Erlebnis an</string>
+    <string name="confirmation_least_favored">Am wenigsten bevorzugt</string>
+    <string name="confirmation_preferred">Ihre Favoriten</string>
+    <string name="confirmation_subtitle">Zusammenfassung Ihrer Auswahl</string>
+    <string msgid="8038256446254964252" name="default_error_message">"Ungültige Eingabe"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"Pop-up-Fenster"</string>
+    <string name="dev_nav_config">Konfig</string>
+    <string name="dev_nav_formulas">Formeln</string>
+    <string name="dev_nav_home">Start</string>
+    <string name="dev_nav_interaction">Interaktion</string>
+    <string name="dev_nav_prep">Vorb.</string>
+    <string name="dev_nav_results">Ergebnisse</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"Drop-down-Menü"</string>
+    <string name="formula_loading">Wird geladen...</string>
+    <string name="formula_personalizer_alternatives">Alternativen</string>
+    <string name="formula_personalizer_current_note">Aktuelle Note</string>
+    <string name="formula_personalizer_error">Diese Note konnte nicht ersetzt werden. Bitte versuchen Sie es erneut.</string>
+    <string name="formula_personalizer_invite">Klicken Sie auf das Symbol neben einer Note, um ihre Alternativen zu sehen.</string>
+    <string name="formula_personalizer_no_alternatives">Keine Alternativen für diese Note verfügbar.</string>
+    <string name="formula_recommended_formula">Empfohlene Formel</string>
+    <string name="formula_version">Version</string>
+    <string name="formulas_close">Schließen</string>
+    <string name="formulas_col_customer">Kunde</string>
+    <string name="formulas_col_date">Datum</string>
+    <string name="formulas_col_email">E-Mail</string>
+    <string name="formulas_col_reference">Referenz</string>
+    <string name="formulas_col_type">Typ</string>
+    <string name="formulas_load_error">Formeln konnten nicht geladen werden.</string>
+    <string name="formulas_loading">Wird geladen...</string>
+    <string name="formulas_next">Weiter</string>
+    <string name="formulas_no_results">Keine Formeln gefunden.</string>
+    <string name="formulas_page_of">Seite {page} / {totalPages}</string>
+    <string name="formulas_prev">Zurück</string>
+    <string name="formulas_refresh">Aktualisieren</string>
+    <string name="formulas_search_placeholder">Nach Referenz suchen...</string>
+    <string name="formulas_subtitle">Generierte Formeln durchsuchen und durchblättern.</string>
+    <string name="formulas_title">Formeln</string>
+    <string name="formulas_total_count">{count} Formel(n)</string>
+    <string name="generating_catalog_subtitle">Wir suchen die Parfums, die am besten zu Ihren Vorlieben passen.</string>
+    <string name="generating_catalog_title">Ihre Parfums werden gesucht</string>
+    <string name="generating_subtitle">Rose komponiert zwei individuelle Duftformeln basierend auf Ihrem einzigartigen olfaktorischen Profil.</string>
+    <string name="generating_title">Ihre Formeln werden erstellt</string>
+    <string name="home_badge">Persönlicher KI-Parfümeur</string>
+    <string name="home_by_word">von</string>
+    <string name="home_cta">Klicken Sie auf \'Einführung\', um mehr zu erfahren.</string>
+    <string name="home_ester_floating_label">20+ Marken | ~150 Länder | 4 Produktkategorien</string>
+    <string name="home_ester_tagline">Estée Lauder ist ein weltweit führendes Unternehmen im Bereich Prestige-Beauty</string>
+    <string name="home_floating_label">Duft-Mapping-Engine v1.0</string>
+    <string name="home_get_started">Loslegen</string>
+    <string name="home_introduction">Einführung</string>
+    <string name="home_playing">Wird abgespielt...</string>
+    <string name="home_subtitle">Rose, Ihre virtuelle Assistentin.</string>
+    <string name="home_title">Le studio des parfums</string>
+    <string msgid="6827826412747255547" name="in_progress">"In Bearbeitung"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"Teilweise aktiviert"</string>
+    <string name="intensity_intense">Intensiv</string>
+    <string name="intensity_light">Leicht</string>
+    <string name="intensity_moderate">Moderat</string>
+    <string name="intensity_subtitle">Welche Intensität wünschen Sie?</string>
+    <string name="interaction_agent_idle">Sitzung pausiert...</string>
+    <string name="interaction_agent_listening">Sie sind an der Reihe</string>
+    <string name="interaction_agent_speaking">{name} spricht...</string>
+    <string name="interaction_agent_thinking">Denkt nach...</string>
+    <string name="interaction_brand">Le studio des parfums</string>
+    <string name="interaction_click_select_hint">Klicken Sie auf Ihre 2 Auswahlmöglichkeiten</string>
+    <string name="interaction_connecting">Verbindung wird hergestellt...</string>
+    <string name="interaction_enable_audio">Audio aktivieren</string>
+    <string name="interaction_fragrance_curator">Duft-Kuratorin</string>
+    <string name="interaction_loading">Wird geladen...</string>
+    <string name="interaction_mic_disable">Mikrofon stummschalten</string>
+    <string name="interaction_mic_enable">Mikrofon aktivieren</string>
+    <string name="interaction_resume">Fortsetzen</string>
+    <string name="interaction_resume_question">Ich habe eine Frage</string>
+    <string name="interaction_rose">Rose</string>
+    <string name="interaction_step">Schritt</string>
+    <string name="interaction_stop">Stopp</string>
+    <string name="interaction_waiting">Ich warte auf Ihre Antwort...</string>
+    <string msgid="2988463736136100848" name="m3c_bottom_sheet_collapse_description">"Ansicht am unteren Rand minimieren"</string>
+    <string msgid="1555567894577437024" name="m3c_bottom_sheet_dismiss_description">"Ansicht am unteren Rand schließen"</string>
+    <string msgid="8403354765404029791" name="m3c_bottom_sheet_drag_handle_description">"Ziehpunkt"</string>
+    <string msgid="6670819569745899763" name="m3c_bottom_sheet_expand_description">"Ansicht am unteren Rand maximieren"</string>
+    <string msgid="3010635850035863127" name="m3c_bottom_sheet_pane_title">"Ansicht am unteren Rand"</string>
+    <string msgid="8166741421776570875" name="m3c_date_input_headline">"Eingabedatum"</string>
+    <string msgid="229313757840775812" name="m3c_date_input_headline_description">"Eingabedatum: %1$s"</string>
+    <string msgid="6116910750161463197" name="m3c_date_input_invalid_for_pattern">"Datum entspricht nicht dem erwarteten Format: %1$s"</string>
+    <string msgid="2521768508935305279" name="m3c_date_input_invalid_not_allowed">"Unzulässiges Datum: %1$s"</string>
+    <string msgid="7052898923934555305" name="m3c_date_input_invalid_year_range">"Datum liegt außerhalb des erwarteten Jahresbereichs (%1$s–%2$s)"</string>
+    <string msgid="2895559812010326913" name="m3c_date_input_label">"Datum"</string>
+    <string msgid="1237013946323089826" name="m3c_date_input_no_input_description">"Kein Datum"</string>
+    <string msgid="7306227249789210568" name="m3c_date_input_title">"Datum auswählen"</string>
+    <string msgid="7605002211875882969" name="m3c_date_picker_headline">"Ausgewähltes Datum"</string>
+    <string msgid="3664277305226978227" name="m3c_date_picker_headline_description">"Aktuelle Auswahl: %1$s"</string>
+    <string msgid="8436650776581492840" name="m3c_date_picker_navigate_to_year_description">"Zum Jahr %1$s wechseln"</string>
+    <string msgid="5811000998184572395" name="m3c_date_picker_no_selection_description">"Kein Datum"</string>
+    <string msgid="7813882352367152251" name="m3c_date_picker_scroll_to_earlier_years">"Zum Ansehen vorheriger Jahre scrollen"</string>
+    <string msgid="5727367015496556177" name="m3c_date_picker_scroll_to_later_years">"Zum Ansehen nachfolgender Jahre scrollen"</string>
+    <string msgid="1804346892470238807" name="m3c_date_picker_switch_to_calendar_mode">"In den Kalendereingabemodus wechseln"</string>
+    <string msgid="395627960681594326" name="m3c_date_picker_switch_to_day_selection">"Wischen, um ein Jahr auszuwählen, oder tippen, um zur Tagesauswahl zurückzukehren"</string>
+    <string msgid="2219746470065162704" name="m3c_date_picker_switch_to_input_mode">"In den Texteingabemodus wechseln"</string>
+    <string msgid="7142101321095356500" name="m3c_date_picker_switch_to_next_month">"Zum nächsten Monat wechseln"</string>
+    <string msgid="228438865139394590" name="m3c_date_picker_switch_to_previous_month">"Zum vorherigen Monat wechseln"</string>
+    <string msgid="791651718641787594" name="m3c_date_picker_switch_to_year_selection">"Zur Jahresauswahl wechseln"</string>
+    <string msgid="7430790972741451689" name="m3c_date_picker_title">"Datum auswählen"</string>
+    <string msgid="3199387177749801575" name="m3c_date_picker_today_description">"Heute"</string>
+    <string msgid="2068382232816991922" name="m3c_date_picker_year_picker_pane_title">"Jahresauswahl sichtbar"</string>
+    <string msgid="3190049423327661366" name="m3c_date_range_input_invalid_range_input">"Angegebener Zeitraum ungültig"</string>
+    <string msgid="3148384720560189467" name="m3c_date_range_input_title">"Daten eingeben"</string>
+    <string msgid="2138321128465719402" name="m3c_date_range_picker_day_in_range">"Im Zeitraum"</string>
+    <string msgid="4947636797751277713" name="m3c_date_range_picker_end_headline">"Enddatum"</string>
+    <string msgid="602077859540990149" name="m3c_date_range_picker_scroll_to_next_month">"Zum Ansehen des nächsten Monats scrollen"</string>
+    <string msgid="4592174524846109496" name="m3c_date_range_picker_scroll_to_previous_month">"Zum Ansehen des vorherigen Monats scrollen"</string>
+    <string msgid="4665981448952749820" name="m3c_date_range_picker_start_headline">"Startdatum"</string>
+    <string msgid="3134165431120340385" name="m3c_date_range_picker_title">"Daten auswählen"</string>
+    <string msgid="7617233117134790350" name="m3c_dialog">"Dialogfeld"</string>
+    <string msgid="3177828188723359358" name="m3c_dropdown_menu_collapsed">"Minimiert"</string>
+    <string msgid="2360841780724299882" name="m3c_dropdown_menu_expanded">"Maximiert"</string>
+    <string msgid="8687821690726149911" name="m3c_dropdown_menu_toggle">"Drop-down-Menü maximieren/minimieren"</string>
+    <string msgid="6152806324422087846" name="m3c_search_bar_search">"Suche"</string>
+    <string msgid="6152755701819882931" name="m3c_snackbar_dismiss">"Schließen"</string>
+    <string msgid="7655536806087401899" name="m3c_suggestions_available">"Vorschläge unten"</string>
+    <string msgid="2786685010796619560" name="m3c_time_picker_am">"AM"</string>
+    <string msgid="2349193472625211372" name="m3c_time_picker_hour">"Stunde"</string>
+    <string msgid="9179527532316922345" name="m3c_time_picker_hour_24h_suffix">"%1$d Std."</string>
+    <string msgid="8876759303332837035" name="m3c_time_picker_hour_selection">"Stunde auswählen"</string>
+    <string msgid="3458167507790628988" name="m3c_time_picker_hour_suffix">"%1$d Uhr"</string>
+    <string msgid="6973808109666874069" name="m3c_time_picker_hour_text_field">"für Stunde"</string>
+    <string msgid="4313071914266462005" name="m3c_time_picker_minute">"Minute"</string>
+    <string msgid="4699133535056739733" name="m3c_time_picker_minute_selection">"Minuten auswählen"</string>
+    <string msgid="5064177921781937179" name="m3c_time_picker_minute_suffix">"%1$d Minuten"</string>
+    <string msgid="7661234488295443182" name="m3c_time_picker_minute_text_field">"für Minuten"</string>
+    <string msgid="5865171949528594571" name="m3c_time_picker_period_toggle_description">"Vormittags oder nachmittags auswählen"</string>
+    <string msgid="6616362054113087709" name="m3c_time_picker_pm">"Nachmittags"</string>
+    <string msgid="1805687647081129904" name="m3c_tooltip_long_press_label">"Kurzinfo anzeigen"</string>
+    <string msgid="5460405025248574620" name="m3c_tooltip_pane_description">"Kurzinfo"</string>
+    <string name="moodboard_alt">Moodboard-Visual des Duftes</string>
+    <string name="moodboard_close">Moodboard schließen</string>
+    <string name="moodboard_loading">Ihr Duftvisual wird erstellt…</string>
+    <string name="moodboard_print">Moodboard drucken</string>
+    <string name="moodboard_title">Duft-Moodboard</string>
+    <string name="nav_ai_experience">Das KI-Erlebnis</string>
+    <string name="nav_atelier">Atelier</string>
+    <string name="nav_brand">Le studio des parfums</string>
+    <string name="nav_collections">Kollektionen</string>
+    <string name="nav_get_started">Loslegen</string>
+    <string name="nav_home">Start</string>
+    <string name="nav_login">Anmelden</string>
+    <string msgid="542007171693138492" name="navigation_menu">"Navigationsmenü"</string>
+    <string msgid="6610465462668679431" name="not_selected">"Nicht ausgewählt"</string>
+    <string name="perfume_name_placeholder">Der Name Ihres Duftes</string>
+    <string name="perfume_name_submit">Bestätigen</string>
+    <string name="perfume_name_submitted">Gesendet!</string>
+    <string name="perfume_name_subtitle">Geben Sie Ihrem Duft einen Namen</string>
+    <string name="permission_grant">Zugriff erlauben</string>
+    <string name="permission_mic_camera_desc">Lylo benötigt Zugriff auf Ihr Mikrofon (und die Kamera für den KI-Avatar), um die Sprachberatung durchzuführen.</string>
+    <string name="permission_mic_camera_title">Zugriff auf Mikrofon und Kamera</string>
+    <string name="preparation_back">Zurück zur Konfiguration</string>
+    <string name="preparation_conn_close">Schließen</string>
+    <string name="preparation_conn_download">Download</string>
+    <string name="preparation_conn_error">Server konnte nicht erreicht werden.</string>
+    <string name="preparation_conn_latency">Latenz</string>
+    <string name="preparation_conn_loss">Verlust</string>
+    <string name="preparation_conn_modal_title">Verbindungstest</string>
+    <string name="preparation_conn_phase_download">Download-Geschwindigkeit wird gemessen...</string>
+    <string name="preparation_conn_phase_download_desc">Eine Testdatei wird heruntergeladen, um Ihre Bandbreite zu schätzen.</string>
+    <string name="preparation_conn_phase_latency">Latenz wird gemessen</string>
+    <string name="preparation_conn_phase_ping_desc">8 Anfragen werden gesendet, um Stabilität und Paketverlust zu messen...</string>
+    <string name="preparation_conn_retry">Erneut ausführen</string>
+    <string name="preparation_conn_test">Meine Verbindung testen</string>
+    <string name="preparation_conn_verdict_degraded">Avatar aktiviert, aber riskant</string>
+    <string name="preparation_conn_verdict_good">Avatar aktiviert</string>
+    <string name="preparation_conn_verdict_poor">Zu Nur-Audio wechseln</string>
+    <string name="preparation_conn_verdict_sub_degraded">Ihre Verbindung ist instabil. Der Avatar kann einfrieren oder ruckeln.</string>
+    <string name="preparation_conn_verdict_sub_good">Ihre Verbindung ist ausgezeichnet. Genießen Sie das volle Erlebnis mit dem Video-Avatar.</string>
+    <string name="preparation_conn_verdict_sub_poor">Ihre Verbindung ist für den Video-Avatar zu schwach. Wir empfehlen, die Sitzung nur mit Audio durchzuführen, um Unterbrechungen zu vermeiden.</string>
+    <string name="preparation_connected">Verbunden — {name} hört zu</string>
+    <string name="preparation_connecting">Verbindung wird hergestellt...</string>
+    <string name="preparation_connection_desc">Eine gute Verbindung sorgt für ein reibungsloses Gespräch.</string>
+    <string name="preparation_connection_title">Stabile Verbindung</string>
+    <string name="preparation_footer">Erlebnis unterstützt von Studio Olfactif AI</string>
+    <string name="preparation_mic_denied">Zugriff verweigert. Erlauben Sie den Mikrofonzugriff in Ihren Browsereinstellungen.</string>
+    <string name="preparation_mic_desc">Testen Sie Ihr Mikrofon vor dem Start. Sprechen Sie und überprüfen Sie, ob die Lautstärke korrekt ist.</string>
+    <string name="preparation_mic_device">Mikrofon</string>
+    <string name="preparation_mic_error">Zugriff auf das Mikrofon nicht möglich.</string>
+    <string name="preparation_mic_good">Guter Pegel ✓</string>
+    <string name="preparation_mic_level">Lautstärke</string>
+    <string name="preparation_mic_loud">Zu laut — entfernen Sie sich vom Mikrofon</string>
+    <string name="preparation_mic_max">Hoch</string>
+    <string name="preparation_mic_min">Niedrig</string>
+    <string name="preparation_mic_not_found">Kein Mikrofon auf diesem Gerät erkannt.</string>
+    <string name="preparation_mic_requesting">Zugriff wird angefordert...</string>
+    <string name="preparation_mic_retry">Erneut versuchen</string>
+    <string name="preparation_mic_silent">Sprechen Sie zum Testen...</string>
+    <string name="preparation_mic_stop">Test stoppen</string>
+    <string name="preparation_mic_test">Test starten</string>
+    <string name="preparation_mic_title">Mikrofontest</string>
+    <string name="preparation_please_wait">Bitte warten Sie einen Moment...</string>
+    <string name="preparation_quiet_desc">Sorgen Sie für einen ruhigen Ort für die beste Spracherkennung.</string>
+    <string name="preparation_quiet_title">Ruhige Umgebung</string>
+    <string name="preparation_speak_desc">Achten Sie auf die Leiste unten im Bildschirm: Sie zeigt Ihnen an, wann Sie an der Reihe sind.</string>
+    <string name="preparation_speak_title">Sprechen, wenn Sie an der Reihe sind</string>
+    <string name="preparation_starting_in">Beginnt in</string>
+    <string name="preparation_subtitle">Um Ihren individuellen Duft zu kreieren, muss ich Ihre Geschichte klar hören.</string>
+    <string name="preparation_subtitle_catalog">Um die Parfums zu finden, die am besten zu Ihnen passen, muss ich Ihre Geschichte klar hören.</string>
+    <string name="preparation_title">Vorbereitung Ihrer olfaktorischen Reise</string>
+    <string name="printer_modal_confirm">Bestätigen</string>
+    <string name="printer_modal_description">Wählen Sie den Standort des Druckers zum Drucken der Formeln.</string>
+    <string name="printer_modal_load_error">Drucker konnten nicht geladen werden.</string>
+    <string name="printer_modal_no_printers">Keine Drucker verfügbar.</string>
+    <string name="printer_modal_title">Drucker</string>
+    <string name="pyramid_base">Basis</string>
+    <string name="pyramid_heart">Herz</string>
+    <string name="pyramid_hint">Tippen Sie auf eine Note, um sie zu ersetzen</string>
+    <string name="pyramid_top">Kopf</string>
+    <string name="quiz_back">Zurück</string>
+    <string name="quiz_change_choice">Formel ändern</string>
+    <string name="quiz_change_choice_catalog">Parfum ändern</string>
+    <string name="quiz_continue">Weiter</string>
+    <string name="quiz_email_error">Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.</string>
+    <string name="quiz_email_sent">E-Mail gesendet</string>
+    <string name="quiz_error_generating">Generierungsfehler</string>
+    <string name="quiz_error_generating_multi">Fehler bei der Mehrfachgenerierung</string>
+    <string name="quiz_error_loading_questions">Ladefehler</string>
+    <string name="quiz_error_unknown">Unbekannter Fehler</string>
+    <string name="quiz_hint_bottom2">Wählen Sie Ihre 2 am wenigsten bevorzugten</string>
+    <string name="quiz_hint_top2">Wählen Sie Ihre 2 Favoriten</string>
+    <string name="quiz_intensity_frais">Leicht</string>
+    <string name="quiz_intensity_frais_desc">Frisch und dezent</string>
+    <string name="quiz_intensity_mix">Ausgewogen</string>
+    <string name="quiz_intensity_mix_desc">Eine Mischung aus beidem</string>
+    <string name="quiz_intensity_puissant">Intensiv</string>
+    <string name="quiz_intensity_puissant_desc">Kräftig und langanhaltend</string>
+    <string name="quiz_intensity_question">Welche Parfumintensität bevorzugen Sie?</string>
+    <string name="quiz_label">Visueller Modus</string>
+    <string name="quiz_loading">Fragen werden geladen...</string>
+    <string name="quiz_next">Nächste Frage</string>
+    <string name="quiz_no">Nein</string>
+    <string name="quiz_open_email_form">Formel per E-Mail erhalten</string>
+    <string name="quiz_open_email_form_catalog">Parfum per E-Mail erhalten</string>
+    <string name="quiz_perfume_name_question">Geben Sie zum Abschluss Ihrem Parfum einen Namen</string>
+    <string name="quiz_pick_count_many">{n} Antworten</string>
+    <string name="quiz_pick_count_one">1 Antwort</string>
+    <string name="quiz_print">Drucken</string>
+    <string name="quiz_profile_age_placeholder">z. B. 35</string>
+    <string name="quiz_profile_age_question">Wie alt sind Sie?</string>
+    <string name="quiz_profile_allergies_detail_question">Welche Allergien haben Sie?</string>
+    <string name="quiz_profile_allergies_placeholder">z. B. Jasmin, Moschus, Zedernholz...</string>
+    <string name="quiz_profile_allergies_question">Haben Sie Allergien?</string>
+    <string name="quiz_profile_dislikes_detail_question">Welche Noten oder Düfte sollten wir vermeiden?</string>
+    <string name="quiz_profile_dislikes_placeholder">z.B. Zimt, Patschuli, Moschus...</string>
+    <string name="quiz_profile_dislikes_question">Gibt es eine Note oder einen Duft, den Sie nicht mögen?</string>
+    <string name="quiz_profile_female">Weiblich</string>
+    <string name="quiz_profile_gender_question">Was ist Ihr Geschlecht?</string>
+    <string name="quiz_profile_label">Ihr Profil</string>
+    <string name="quiz_profile_male">Männlich</string>
+    <string name="quiz_profile_pregnant_question">Sind Sie schwanger?</string>
+    <string name="quiz_profile_subtitle">Diese Informationen helfen dabei, Ihre Formel zu personalisieren.</string>
+    <string name="quiz_profile_subtitle_catalog">Diese Informationen helfen dabei, Ihre Empfehlungen zu personalisieren.</string>
+    <string name="quiz_profile_title">Erzählen Sie uns von sich</string>
+    <string name="quiz_receive_email">Erhalten</string>
+    <string name="quiz_results_back_to_choices">Zurück zur Auswahl</string>
+    <string name="quiz_results_change">Ändern</string>
+    <string name="quiz_results_choose_your_formula">{name}, wählen Sie Ihre Formel</string>
+    <string name="quiz_results_continue">Weiter</string>
+    <string name="quiz_results_finish">Beenden</string>
+    <string name="quiz_results_give_reference_to_perfumer">Geben Sie diese Referenz unserem Parfümeur, um Ihre Formel wiederzufinden.</string>
+    <string name="quiz_results_label">Ihre Formeln</string>
+    <string name="quiz_results_label_catalog">Ihre Parfums</string>
+    <string name="quiz_results_next_person">Zur nächsten Person</string>
+    <string name="quiz_results_personalize_title">Personalisieren Sie Ihre Formel</string>
+    <string name="quiz_results_print_all_formulas">Die {count} Formeln drucken</string>
+    <string name="quiz_results_print_error">Druckfehler.</string>
+    <string name="quiz_results_printed">Gedruckt</string>
+    <string name="quiz_results_reference_loading">Ihre Referenz wird erstellt...</string>
+    <string name="quiz_results_reference_retry">Referenz nicht verfügbar — erneut versuchen</string>
+    <string name="quiz_results_save_error">Speicherfehler.</string>
+    <string name="quiz_results_saved">Gespeichert</string>
+    <string name="quiz_results_selected_next">Ausgewählt — weiter zum nächsten…</string>
+    <string name="quiz_results_sheets_printed">{count} Blatt/Blätter gedruckt</string>
+    <string name="quiz_results_subtitle">Klicken Sie auf die Formel, die am besten zu Ihnen passt.</string>
+    <string name="quiz_results_subtitle_catalog">Klicken Sie auf das Parfum, das am besten zu Ihnen passt.</string>
+    <string name="quiz_results_subtitle_chosen">Sie haben Ihre Wahl getroffen.</string>
+    <string name="quiz_results_tap_change_to_modify">Tippen Sie auf \"Ändern\", um eine Auswahl zu bearbeiten</string>
+    <string name="quiz_results_tap_other_card">Tippen Sie auf die andere Karte, um Ihre Wahl zu ändern</string>
+    <string name="quiz_results_tap_preferred_formula">Tippen Sie auf Ihre bevorzugte Formel</string>
+    <string name="quiz_results_title">Ihre individuellen Formeln</string>
+    <string name="quiz_results_title_catalog">Ihre empfohlenen Parfums</string>
+    <string name="quiz_results_title_chosen">Ihre Formel</string>
+    <string name="quiz_results_title_chosen_catalog">Ihr Parfum</string>
+    <string name="quiz_results_validate">Bestätigen</string>
+    <string name="quiz_results_your_formulas">Ihre Formeln</string>
+    <string name="quiz_send_email">Per E-Mail senden</string>
+    <string name="quiz_submit">Meine Formeln erstellen</string>
+    <string name="quiz_submit_catalog">Meine Parfums ansehen</string>
+    <string name="quiz_subtitle">Wählen Sie Ihre 4 Optionen für jede Frage — vom meist- zum am wenigsten bevorzugten.</string>
+    <string name="quiz_title">Ihre olfaktorischen Vorlieben</string>
+    <string name="quiz_yes">Ja</string>
+    <string name="quiz_your_turn">{name}, Sie sind dran</string>
+    <string msgid="5941395253238309765" name="range_end">"Bereichsende"</string>
+    <string msgid="7097486360902471446" name="range_start">"Bereichsstart"</string>
+    <string name="recommendations_ai_curator">KI-Duftkuratorin</string>
+    <string name="recommendations_brand">Le Studio Des Parfums</string>
+    <string name="recommendations_invalid_qr">Dieser QR-Code ist ungültig oder unvollständig.</string>
+    <string name="recommendations_no_formulas">Derzeit keine Formeln verfügbar.</string>
+    <string name="recommendations_no_formulas_catalog">Derzeit keine Parfums verfügbar.</string>
+    <string name="recommendations_note_labels_base">Basisnoten</string>
+    <string name="recommendations_note_labels_boosters">Booster</string>
+    <string name="recommendations_note_labels_heart">Herznoten</string>
+    <string name="recommendations_note_labels_top">Kopfnoten</string>
+    <string name="recommendations_page_compare_formulas">Vergleichen Sie die beiden Formeln übersichtlich</string>
+    <string name="recommendations_page_print">Drucken</string>
+    <string name="recommendations_page_print_error">Druckfehler.</string>
+    <string name="recommendations_page_printed">Gedruckt</string>
+    <string name="recommendations_page_resume_question">Ich habe eine Frage</string>
+    <string name="recommendations_page_your_recommendations">Ihre Empfehlungen</string>
+    <string name="recommendations_qr_button">QR-Code anzeigen</string>
+    <string name="recommendations_qr_close">QR-Code-Dialog schließen</string>
+    <string name="recommendations_qr_subtitle">Scannen Sie diesen QR-Code, um diese Formel auf dem Handy zu öffnen.</string>
+    <string name="recommendations_qr_subtitle_catalog">Scannen Sie diesen QR-Code, um dieses Parfum auf dem Handy zu öffnen.</string>
+    <string name="recommendations_qr_title">Formel auf Ihrem Telefon ansehen</string>
+    <string name="recommendations_qr_title_catalog">Parfum auf Ihrem Telefon ansehen</string>
+    <string name="recommendations_return_home">Zurück zur Startseite</string>
+    <string name="recommendations_rose">Rose</string>
+    <string name="recommendations_select_size">GRÖSSE WÄHLEN</string>
+    <string name="recommendations_title">Hier sind zwei Parfümformel-Varianten, die zu Ihrem Profil passen.</string>
+    <string name="recommendations_title_catalog">Hier sind die Parfums, die am besten zu Ihrem Profil passen.</string>
+    <string name="robot_go_arrived">Der Roboter ist angekommen.</string>
+    <string name="robot_go_button">Roboter zum gewählten Punkt schicken</string>
+    <string name="robot_go_failed">Der Roboter konnte sich nicht bewegen: %1$s</string>
+    <string name="robot_settings_clear">Ausgewählten Punkt entfernen</string>
+    <string name="robot_settings_current">Ausgewählter Punkt: %1$s</string>
+    <string name="robot_settings_empty">Keine Punkte auf der aktiven Karte des Roboters gespeichert.</string>
+    <string name="robot_settings_none">keiner</string>
+    <string name="robot_settings_subtitle">Wählen Sie den Kartenpunkt, zu dem der Roboter vom Formelbildschirm aus fährt.</string>
+    <string name="robot_settings_title">Roboter-Einstellungen</string>
+    <string name="robot_settings_unavailable">Der Roboter ist nicht verbunden: Dieses Tablet hat keine Roboterdienste.</string>
+    <string msgid="6043586758067023" name="selected">"Ausgewählt"</string>
+    <string name="send_mail_button">Per E-Mail erhalten</string>
+    <string name="send_mail_close">Schließen</string>
+    <string name="send_mail_company">Unternehmen (optional)</string>
+    <string name="send_mail_email">E-Mail</string>
+    <string name="send_mail_error">Fehler beim Senden. Bitte versuchen Sie es erneut.</string>
+    <string name="send_mail_first_name">Vorname</string>
+    <string name="send_mail_job_title">Position (optional)</string>
+    <string name="send_mail_last_name">Nachname</string>
+    <string name="send_mail_sending">Wird gesendet…</string>
+    <string name="send_mail_sent">Formel gesendet!</string>
+    <string name="send_mail_submit">Senden</string>
+    <string name="send_mail_subtitle">Geben Sie Ihre Daten ein, um Ihre Formel per E-Mail zu erhalten.</string>
+    <string name="send_mail_title">Erhalten Sie Ihre Formel</string>
+    <string name="similar_perfumes_button">Ähnliche Düfte</string>
+    <string name="similar_perfumes_error">Derzeit können keine ähnlichen Düfte gefunden werden.</string>
+    <string name="similar_perfumes_loading">Suche nach ähnlichen Düften…</string>
+    <string msgid="4139871816613051306" name="state_empty">"Leer"</string>
+    <string msgid="5834637030682409883" name="state_off">"Aus"</string>
+    <string msgid="1490883874751719580" name="state_on">"An"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="2561197295334830845" name="switch_role">"Wechseln"</string>
+    <string msgid="1672349317127674378" name="tab">"Tab"</string>
+    <string name="tech_bar_rose_assistant">KI-Assistentin</string>
+    <string name="tech_bar_rose_message">Auswahl von 3 Noten für Ihren Morgen in Paris.</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> Prozent."</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"Kurzinfo"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"Kurzinfo anzeigen"</string>
+    <string name="transcript_empty">Das Gespräch wird hier angezeigt...</string>
+    <string name="transcript_title">Gespräch</string>
+    <string name="transcript_toggle">Gespräch</string>
+</resources>

@@ -1,0 +1,650 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:2:1-79:12
+INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:2:1-79:12
+INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:2:1-79:12
+INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:2:1-79:12
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.navigation:navigation-common:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8213fa756b4be2592c0923be68a1ccc3/transformed/navigation-common-2.8.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f55707fc75bbb915f6c79600a0c9fb8d/transformed/navigation-runtime-2.8.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/ca4dabc2a24209f7830acf88b2755ca7/transformed/navigation-common-ktx-2.8.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/ffe67ba39df9b778e3e889ca4f6c13a8/transformed/navigation-runtime-ktx-2.8.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/2b505b84f17f9d998f291757a02b5e23/transformed/navigation-compose-2.8.5/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8d43a879ec83bb44e7abecb6af8a67e5/transformed/googleid-1.1.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.credentials:credentials:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/bdb68bb22edea02ba60e40dee526590b/transformed/credentials-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-fido:21.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/dbae5afa6d516ed8728ab99e26bb18c7/transformed/play-services-fido-21.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/9a36d72ff0f1ba277614f3bc9a73809e/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/6ae9a797fa05fcf7d6fe3334cd9e5843/transformed/play-services-auth-base-18.0.10/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/1fbe3d9f2d3b06e6657eea292e21de40/transformed/play-services-base-18.3.0/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/60df1a2b57e943d446c60bbb1ce452b8/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a88e540c976324a2d08ef58eb2fd4c5e/transformed/play-services-basement-18.3.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.5.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8e47c3e6d3c4cfd9b3f786b577797be1/transformed/fragment-1.5.7/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.9.3] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/c681fbd9dcb2d8a5cc21bec067ef3350/transformed/activity-1.9.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.9.3] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3a096a0ac6caa568915c6097d755afe7/transformed/activity-ktx-1.9.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.3.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/38ae439c3bbbfaaa448b8abd736fc280/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/bcef94b44eac37d1c5319e0ddb1b2439/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/29e303cebafbf4a5d7fb9646457ced79/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt.coil3:coil-compose-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b68b192de81ae487eede56a32eeee082/transformed/coil-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt.coil3:coil-compose-core-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/d5bce5cc0c1c75d663fdb6053dbf9839/transformed/coil-compose-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/c1ce621c9614caede6d1526a409b0914/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/2745a409afd6445ee46b2c6fa93a4763/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3d7059ee0236831d91aedddaaf0d1140/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e7cde0104f199cab98c50cf24c503ccd/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/7deea8d66b8114d7c69fea87f7e9f427/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/57f2ffdbd6681165eba6a1cf7e4043ae/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/444798fcbf8e698193f7cf6c487252ec/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/0ac3eac5ce1069c1697a46927160af7b/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3ae472cd660fa9e6bcd5803667f3a849/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/c7fb72d44add91cd47112560609d50bb/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5adf8a684dd54930c88dcb4cd56f1bad/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f8769c698b74a9ca68dd6bd72e35e781/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity-compose:1.9.3] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8e9561169564cceb6e05a9949fe3cda9/transformed/activity-compose-1.9.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/738991df832050758276172bbcbaee80/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5bc9b1ecfdeadb30c9b15b7fe8716097/transformed/lifecycle-livedata-core-2.8.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/da541ca4ea3df9d2becf295285c2cc96/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/900a49aff162d920747ee552f0a4d060/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [io.coil-kt.coil3:coil-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/05ee73b5812d18cfd3aaa2ab2d6883d8/transformed/coil-release/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt.coil3:coil-network-core-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/79238bea7c01c79d6101c52c202c4aa9/transformed/coil-network-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt.coil3:coil-core-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/32f0d3c1c619342b6ade861482ab533d/transformed/coil-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/fcf2fc03a5a5185cbb7eb5fbc26a7493/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/7833ec0719e1d529915b40dada83f772/transformed/lifecycle-viewmodel-savedstate-2.8.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/92b2f19de8435ea75f9187d262e65668/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/cfe3ca894f112a12fdab8031d49c63c9/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a47c36c14d6928e3a0aa20b67a8deca6/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/81ea4ad4f5a5d0013eeeac27152d04b4/transformed/lifecycle-viewmodel-ktx-2.8.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/994987a1f6501a6f0c12c06ced5ecc29/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b280756569df53ccd2847b4795bc97e3/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/35512780dfe01e762aefb6557b5831da/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.36.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f234f2ef66430d63c40dd862c6482c2e/transformed/accompanist-drawablepainter-0.36.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.compose.ui:ui-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/cf4539099824b75a22ae62cbf4269fe4/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/154874035fe59fb7ec80dc0a9a24db47/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-text-google-fonts:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5dfe697e3beb61ae7a8634575d24607b/transformed/ui-text-google-fonts-1.7.6/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a6a4e45b06778635d576aeda155c73e7/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/2cf87c5dc98b216c2c7ec2627b742e0d/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/4f7174c2953bb2fef0eb1eea719a987f/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/431377d222f96e2970f3fbd1e19e3a8d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f2082b47ab3cf90ffcbc1ad7e88ca45f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/c90caebc72431300b50558f62818ae73/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/ee8b905e547ffaed7bfc72e5dbef0156/transformed/core-ktx-1.15.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8d3a585ec17030552429718b1e97e159/transformed/datastore-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-android:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f6b3743bba11e0c7fde39125a2500385/transformed/datastore-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/7a906ca222bc2278bd6ccf91dbccbbeb/transformed/datastore-preferences-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/9a82eb8b4094aef8267769e8c3843d72/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/13f28cd04bf868d6cc75dac86e30af60/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.ajalt:timberkt:1.5.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e187c2e0ccdb5b81044d82b0efd8d3ec/transformed/timberkt-1.5.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.davidliu:audioswitch:89582c47c9a04c62f90aa5e57251af4800a62c9a] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5a16c9d321cb6d7d94a812500b275ab3/transformed/audioswitch-89582c47c9a04c62f90aa5e57251af4800a62c9a/AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e1b83c098be4fa1fdac9cf201ea58f64/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/20deecca410c9f4d4c7c70b7d74eb793/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8f86f67bc49cb547d06fe45553f78e6d/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5cdc7ad6d19c78a7927a16a24beb9f4e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5129c6595a0a106cf51c0a0dbf831586/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/67a7b0a14d439f5feae75f87a673d6e1/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/0c9b6b8048a34c0c81c8006e41122065/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9ae88f64dfa754d50e78c786d80f25b/transformed/exifinterface-1.3.7/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f1f2076bcf3c975fb862f1c87cd0af14/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [io.github.webrtc-sdk:android-prefixed:125.6422.07] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/36a617802dc0672dca13f61d8689d418/transformed/android-prefixed-125.6422.07/AndroidManifest.xml:2:1-9:12
+MERGED from [com.jakewharton.timber:timber:4.7.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a48bf39066e1a301e731a9d408d5594d/transformed/timber-4.7.0/AndroidManifest.xml:2:1-9:12
+	package
+		INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:6:5-71
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:24:5-71
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:24:5-71
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:6:22-68
+uses-permission#android.permission.CAMERA
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:7:5-65
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:25:5-65
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:25:5-65
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:7:22-62
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:8:5-80
+MERGED from [com.github.davidliu:audioswitch:89582c47c9a04c62f90aa5e57251af4800a62c9a] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5a16c9d321cb6d7d94a812500b275ab3/transformed/audioswitch-89582c47c9a04c62f90aa5e57251af4800a62c9a/AndroidManifest.xml:12:5-80
+MERGED from [com.github.davidliu:audioswitch:89582c47c9a04c62f90aa5e57251af4800a62c9a] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5a16c9d321cb6d7d94a812500b275ab3/transformed/audioswitch-89582c47c9a04c62f90aa5e57251af4800a62c9a/AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:8:22-77
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:9:5-95
+MERGED from [com.github.davidliu:audioswitch:89582c47c9a04c62f90aa5e57251af4800a62c9a] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5a16c9d321cb6d7d94a812500b275ab3/transformed/audioswitch-89582c47c9a04c62f90aa5e57251af4800a62c9a/AndroidManifest.xml:9:5-11:38
+MERGED from [com.github.davidliu:audioswitch:89582c47c9a04c62f90aa5e57251af4800a62c9a] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5a16c9d321cb6d7d94a812500b275ab3/transformed/audioswitch-89582c47c9a04c62f90aa5e57251af4800a62c9a/AndroidManifest.xml:9:5-11:38
+	android:maxSdkVersion
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:9:66-92
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:9:22-65
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:10:22-73
+uses-permission#android.permission.INTERNET
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:13:5-67
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:23:5-67
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:13:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:14:5-79
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:22:5-79
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:14:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:15:22-73
+uses-permission#com.ainirobot.coreservice.robotSettingProvider
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:18:5-86
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:18:22-83
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:21:5-68
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:21:22-65
+uses-feature#android.hardware.camera
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:25:5-27:36
+	android:required
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:27:9-33
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:26:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:28:5-30:36
+	android:required
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:30:9-33
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:29:9-57
+uses-feature#android.hardware.microphone
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:31:5-33:35
+	android:required
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:33:9-32
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:32:9-51
+uses-feature#android.hardware.touchscreen
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:34:5-36:36
+	android:required
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:36:9-33
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:35:9-52
+application
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:38:5-77:19
+INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:38:5-77:19
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:29:5-35:19
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:29:5-35:19
+MERGED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:23:5-42:19
+MERGED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:23:5-42:19
+MERGED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-fido:21.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/dbae5afa6d516ed8728ab99e26bb18c7/transformed/play-services-fido-21.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:21.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/dbae5afa6d516ed8728ab99e26bb18c7/transformed/play-services-fido-21.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/1fbe3d9f2d3b06e6657eea292e21de40/transformed/play-services-base-18.3.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/1fbe3d9f2d3b06e6657eea292e21de40/transformed/play-services-base-18.3.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/60df1a2b57e943d446c60bbb1ce452b8/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/60df1a2b57e943d446c60bbb1ce452b8/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a88e540c976324a2d08ef58eb2fd4c5e/transformed/play-services-basement-18.3.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a88e540c976324a2d08ef58eb2fd4c5e/transformed/play-services-basement-18.3.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f8769c698b74a9ca68dd6bd72e35e781/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f8769c698b74a9ca68dd6bd72e35e781/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/738991df832050758276172bbcbaee80/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/738991df832050758276172bbcbaee80/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/154874035fe59fb7ec80dc0a9a24db47/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/154874035fe59fb7ec80dc0a9a24db47/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/20deecca410c9f4d4c7c70b7d74eb793/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/20deecca410c9f4d4c7c70b7d74eb793/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5cdc7ad6d19c78a7927a16a24beb9f4e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5cdc7ad6d19c78a7927a16a24beb9f4e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [com.jakewharton.timber:timber:4.7.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a48bf39066e1a301e731a9d408d5594d/transformed/timber-4.7.0/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a48bf39066e1a301e731a9d408d5594d/transformed/timber-4.7.0/AndroidManifest.xml:7:5-20
+	android:extractNativeLibs
+		INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:44:9-35
+	android:label
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:42:9-41
+	android:roundIcon
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:43:9-48
+	tools:targetApi
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:48:9-29
+	android:icon
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:41:9-43
+	android:allowBackup
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:40:9-35
+	android:theme
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:45:9-48
+	android:networkSecurityConfig
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:47:9-69
+	android:usesCleartextTraffic
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:46:9-45
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:39:9-40
+activity#com.lylo.tablet.MainActivity
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:50:9-75:20
+	android:screenOrientation
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:54:13-50
+	android:exported
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:52:13-36
+	android:configChanges
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:53:13-94
+	android:theme
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:55:13-52
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:51:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:56:13-59:29
+action#android.intent.action.MAIN
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:57:17-69
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:57:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:58:17-77
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:58:27-74
+intent-filter#action:name:action.orionstar.default.app+category:name:android.intent.category.DEFAULT
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:63:13-66:29
+action#action.orionstar.default.app
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:64:17-71
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:64:25-68
+category#android.intent.category.DEFAULT
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:65:17-76
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:65:27-73
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:formula+data:scheme:lylo
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:69:13-74:29
+	android:autoVerify
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:69:28-54
+action#android.intent.action.VIEW
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:70:17-69
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:70:25-66
+category#android.intent.category.BROWSABLE
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:72:17-78
+	android:name
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:72:27-75
+data
+ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:73:17-70
+	android:host
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:73:45-67
+	android:scheme
+		ADDED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml:73:23-44
+uses-sdk
+INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:20:5-44
+MERGED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8213fa756b4be2592c0923be68a1ccc3/transformed/navigation-common-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8213fa756b4be2592c0923be68a1ccc3/transformed/navigation-common-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f55707fc75bbb915f6c79600a0c9fb8d/transformed/navigation-runtime-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f55707fc75bbb915f6c79600a0c9fb8d/transformed/navigation-runtime-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/ca4dabc2a24209f7830acf88b2755ca7/transformed/navigation-common-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/ca4dabc2a24209f7830acf88b2755ca7/transformed/navigation-common-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/ffe67ba39df9b778e3e889ca4f6c13a8/transformed/navigation-runtime-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/ffe67ba39df9b778e3e889ca4f6c13a8/transformed/navigation-runtime-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/2b505b84f17f9d998f291757a02b5e23/transformed/navigation-compose-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.8.5] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/2b505b84f17f9d998f291757a02b5e23/transformed/navigation-compose-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8d43a879ec83bb44e7abecb6af8a67e5/transformed/googleid-1.1.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8d43a879ec83bb44e7abecb6af8a67e5/transformed/googleid-1.1.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/bdb68bb22edea02ba60e40dee526590b/transformed/credentials-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/bdb68bb22edea02ba60e40dee526590b/transformed/credentials-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-fido:21.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/dbae5afa6d516ed8728ab99e26bb18c7/transformed/play-services-fido-21.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:21.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/dbae5afa6d516ed8728ab99e26bb18c7/transformed/play-services-fido-21.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/9a36d72ff0f1ba277614f3bc9a73809e/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/9a36d72ff0f1ba277614f3bc9a73809e/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/6ae9a797fa05fcf7d6fe3334cd9e5843/transformed/play-services-auth-base-18.0.10/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/6ae9a797fa05fcf7d6fe3334cd9e5843/transformed/play-services-auth-base-18.0.10/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/1fbe3d9f2d3b06e6657eea292e21de40/transformed/play-services-base-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/1fbe3d9f2d3b06e6657eea292e21de40/transformed/play-services-base-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/60df1a2b57e943d446c60bbb1ce452b8/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/60df1a2b57e943d446c60bbb1ce452b8/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a88e540c976324a2d08ef58eb2fd4c5e/transformed/play-services-basement-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a88e540c976324a2d08ef58eb2fd4c5e/transformed/play-services-basement-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.5.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8e47c3e6d3c4cfd9b3f786b577797be1/transformed/fragment-1.5.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8e47c3e6d3c4cfd9b3f786b577797be1/transformed/fragment-1.5.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.9.3] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/c681fbd9dcb2d8a5cc21bec067ef3350/transformed/activity-1.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.3] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/c681fbd9dcb2d8a5cc21bec067ef3350/transformed/activity-1.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.3] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3a096a0ac6caa568915c6097d755afe7/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.3] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3a096a0ac6caa568915c6097d755afe7/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/38ae439c3bbbfaaa448b8abd736fc280/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/38ae439c3bbbfaaa448b8abd736fc280/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/bcef94b44eac37d1c5319e0ddb1b2439/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/bcef94b44eac37d1c5319e0ddb1b2439/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/29e303cebafbf4a5d7fb9646457ced79/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/29e303cebafbf4a5d7fb9646457ced79/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-compose-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b68b192de81ae487eede56a32eeee082/transformed/coil-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-compose-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b68b192de81ae487eede56a32eeee082/transformed/coil-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-compose-core-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/d5bce5cc0c1c75d663fdb6053dbf9839/transformed/coil-compose-core-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-compose-core-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/d5bce5cc0c1c75d663fdb6053dbf9839/transformed/coil-compose-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/c1ce621c9614caede6d1526a409b0914/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/c1ce621c9614caede6d1526a409b0914/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/2745a409afd6445ee46b2c6fa93a4763/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/2745a409afd6445ee46b2c6fa93a4763/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3d7059ee0236831d91aedddaaf0d1140/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3d7059ee0236831d91aedddaaf0d1140/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e7cde0104f199cab98c50cf24c503ccd/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e7cde0104f199cab98c50cf24c503ccd/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/7deea8d66b8114d7c69fea87f7e9f427/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/7deea8d66b8114d7c69fea87f7e9f427/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/57f2ffdbd6681165eba6a1cf7e4043ae/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/57f2ffdbd6681165eba6a1cf7e4043ae/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/444798fcbf8e698193f7cf6c487252ec/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/444798fcbf8e698193f7cf6c487252ec/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/0ac3eac5ce1069c1697a46927160af7b/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/0ac3eac5ce1069c1697a46927160af7b/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3ae472cd660fa9e6bcd5803667f3a849/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3ae472cd660fa9e6bcd5803667f3a849/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/c7fb72d44add91cd47112560609d50bb/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/c7fb72d44add91cd47112560609d50bb/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5adf8a684dd54930c88dcb4cd56f1bad/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5adf8a684dd54930c88dcb4cd56f1bad/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f8769c698b74a9ca68dd6bd72e35e781/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f8769c698b74a9ca68dd6bd72e35e781/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.9.3] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8e9561169564cceb6e05a9949fe3cda9/transformed/activity-compose-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.3] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8e9561169564cceb6e05a9949fe3cda9/transformed/activity-compose-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/738991df832050758276172bbcbaee80/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/738991df832050758276172bbcbaee80/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5bc9b1ecfdeadb30c9b15b7fe8716097/transformed/lifecycle-livedata-core-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5bc9b1ecfdeadb30c9b15b7fe8716097/transformed/lifecycle-livedata-core-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/da541ca4ea3df9d2becf295285c2cc96/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/da541ca4ea3df9d2becf295285c2cc96/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/900a49aff162d920747ee552f0a4d060/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/900a49aff162d920747ee552f0a4d060/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [io.coil-kt.coil3:coil-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/05ee73b5812d18cfd3aaa2ab2d6883d8/transformed/coil-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/05ee73b5812d18cfd3aaa2ab2d6883d8/transformed/coil-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-network-core-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/79238bea7c01c79d6101c52c202c4aa9/transformed/coil-network-core-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-network-core-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/79238bea7c01c79d6101c52c202c4aa9/transformed/coil-network-core-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-core-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/32f0d3c1c619342b6ade861482ab533d/transformed/coil-core-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-core-android:3.0.4] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/32f0d3c1c619342b6ade861482ab533d/transformed/coil-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/fcf2fc03a5a5185cbb7eb5fbc26a7493/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/fcf2fc03a5a5185cbb7eb5fbc26a7493/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/7833ec0719e1d529915b40dada83f772/transformed/lifecycle-viewmodel-savedstate-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/7833ec0719e1d529915b40dada83f772/transformed/lifecycle-viewmodel-savedstate-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/92b2f19de8435ea75f9187d262e65668/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/92b2f19de8435ea75f9187d262e65668/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/cfe3ca894f112a12fdab8031d49c63c9/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/cfe3ca894f112a12fdab8031d49c63c9/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a47c36c14d6928e3a0aa20b67a8deca6/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a47c36c14d6928e3a0aa20b67a8deca6/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/81ea4ad4f5a5d0013eeeac27152d04b4/transformed/lifecycle-viewmodel-ktx-2.8.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/81ea4ad4f5a5d0013eeeac27152d04b4/transformed/lifecycle-viewmodel-ktx-2.8.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/994987a1f6501a6f0c12c06ced5ecc29/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/994987a1f6501a6f0c12c06ced5ecc29/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b280756569df53ccd2847b4795bc97e3/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b280756569df53ccd2847b4795bc97e3/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/35512780dfe01e762aefb6557b5831da/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/35512780dfe01e762aefb6557b5831da/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.36.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f234f2ef66430d63c40dd862c6482c2e/transformed/accompanist-drawablepainter-0.36.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.36.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f234f2ef66430d63c40dd862c6482c2e/transformed/accompanist-drawablepainter-0.36.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/cf4539099824b75a22ae62cbf4269fe4/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/cf4539099824b75a22ae62cbf4269fe4/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/154874035fe59fb7ec80dc0a9a24db47/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/154874035fe59fb7ec80dc0a9a24db47/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-text-google-fonts:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5dfe697e3beb61ae7a8634575d24607b/transformed/ui-text-google-fonts-1.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-google-fonts:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5dfe697e3beb61ae7a8634575d24607b/transformed/ui-text-google-fonts-1.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a6a4e45b06778635d576aeda155c73e7/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a6a4e45b06778635d576aeda155c73e7/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/2cf87c5dc98b216c2c7ec2627b742e0d/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/2cf87c5dc98b216c2c7ec2627b742e0d/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/4f7174c2953bb2fef0eb1eea719a987f/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/4f7174c2953bb2fef0eb1eea719a987f/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/431377d222f96e2970f3fbd1e19e3a8d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/431377d222f96e2970f3fbd1e19e3a8d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f2082b47ab3cf90ffcbc1ad7e88ca45f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f2082b47ab3cf90ffcbc1ad7e88ca45f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/c90caebc72431300b50558f62818ae73/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/c90caebc72431300b50558f62818ae73/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/ee8b905e547ffaed7bfc72e5dbef0156/transformed/core-ktx-1.15.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/ee8b905e547ffaed7bfc72e5dbef0156/transformed/core-ktx-1.15.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8d3a585ec17030552429718b1e97e159/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8d3a585ec17030552429718b1e97e159/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f6b3743bba11e0c7fde39125a2500385/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f6b3743bba11e0c7fde39125a2500385/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/7a906ca222bc2278bd6ccf91dbccbbeb/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/7a906ca222bc2278bd6ccf91dbccbbeb/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/9a82eb8b4094aef8267769e8c3843d72/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/9a82eb8b4094aef8267769e8c3843d72/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/13f28cd04bf868d6cc75dac86e30af60/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/13f28cd04bf868d6cc75dac86e30af60/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [com.github.ajalt:timberkt:1.5.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e187c2e0ccdb5b81044d82b0efd8d3ec/transformed/timberkt-1.5.1/AndroidManifest.xml:7:5-43
+MERGED from [com.github.ajalt:timberkt:1.5.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e187c2e0ccdb5b81044d82b0efd8d3ec/transformed/timberkt-1.5.1/AndroidManifest.xml:7:5-43
+MERGED from [com.github.davidliu:audioswitch:89582c47c9a04c62f90aa5e57251af4800a62c9a] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5a16c9d321cb6d7d94a812500b275ab3/transformed/audioswitch-89582c47c9a04c62f90aa5e57251af4800a62c9a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.davidliu:audioswitch:89582c47c9a04c62f90aa5e57251af4800a62c9a] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5a16c9d321cb6d7d94a812500b275ab3/transformed/audioswitch-89582c47c9a04c62f90aa5e57251af4800a62c9a/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e1b83c098be4fa1fdac9cf201ea58f64/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e1b83c098be4fa1fdac9cf201ea58f64/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/20deecca410c9f4d4c7c70b7d74eb793/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/20deecca410c9f4d4c7c70b7d74eb793/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8f86f67bc49cb547d06fe45553f78e6d/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/8f86f67bc49cb547d06fe45553f78e6d/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5cdc7ad6d19c78a7927a16a24beb9f4e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5cdc7ad6d19c78a7927a16a24beb9f4e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5129c6595a0a106cf51c0a0dbf831586/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5129c6595a0a106cf51c0a0dbf831586/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/67a7b0a14d439f5feae75f87a673d6e1/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/67a7b0a14d439f5feae75f87a673d6e1/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/0c9b6b8048a34c0c81c8006e41122065/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/0c9b6b8048a34c0c81c8006e41122065/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9ae88f64dfa754d50e78c786d80f25b/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9ae88f64dfa754d50e78c786d80f25b/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f1f2076bcf3c975fb862f1c87cd0af14/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f1f2076bcf3c975fb862f1c87cd0af14/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [io.github.webrtc-sdk:android-prefixed:125.6422.07] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/36a617802dc0672dca13f61d8689d418/transformed/android-prefixed-125.6422.07/AndroidManifest.xml:5:5-7:41
+MERGED from [io.github.webrtc-sdk:android-prefixed:125.6422.07] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/36a617802dc0672dca13f61d8689d418/transformed/android-prefixed-125.6422.07/AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton.timber:timber:4.7.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a48bf39066e1a301e731a9d408d5594d/transformed/timber-4.7.0/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton.timber:timber:4.7.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a48bf39066e1a301e731a9d408d5594d/transformed/timber-4.7.0/AndroidManifest.xml:5:5-43
+	android:targetSdkVersion
+		INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dwainyumco/Desktop/SDP/SDP-2026/Lylo/lylo-tablet/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:26:5-77
+	android:name
+		ADDED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:26:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION
+ADDED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:27:5-94
+	android:name
+		ADDED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:27:22-91
+service#io.livekit.android.room.track.screencapture.ScreenCaptureService
+ADDED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:30:9-34:43
+	android:enabled
+		ADDED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:32:13-35
+	android:stopWithTask
+		ADDED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:34:13-40
+	android:foregroundServiceType
+		ADDED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:33:13-60
+	android:name
+		ADDED from [io.livekit:livekit-android:2.13.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/3f3af85299074de83e2ce4c6b2a6a081/transformed/livekit-android-2.13.0/AndroidManifest.xml:31:13-92
+service#androidx.credentials.playservices.CredentialProviderMetadataHolder
+ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:24:9-32:19
+	android:enabled
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:26:13-35
+	android:exported
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:28:13-60
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:25:13-94
+meta-data#androidx.credentials.CREDENTIAL_PROVIDER_KEY
+ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:29:13-31:104
+	android:value
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:31:17-101
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:30:17-76
+activity#androidx.credentials.playservices.HiddenActivity
+ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:34:9-41:20
+	android:fitsSystemWindows
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:39:13-45
+	android:enabled
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:38:13-37
+	android:configChanges
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:36:13-87
+	android:theme
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:40:13-48
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a128ad695bd9d660ae03ae7794d159e9/transformed/credentials-play-services-auth-1.3.0/AndroidManifest.xml:35:13-76
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:21.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/b9c991b4bb6d33dbc84792d4a8617197/transformed/play-services-auth-21.1.1/AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/1fbe3d9f2d3b06e6657eea292e21de40/transformed/play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/1fbe3d9f2d3b06e6657eea292e21de40/transformed/play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/1fbe3d9f2d3b06e6657eea292e21de40/transformed/play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/1fbe3d9f2d3b06e6657eea292e21de40/transformed/play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a88e540c976324a2d08ef58eb2fd4c5e/transformed/play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a88e540c976324a2d08ef58eb2fd4c5e/transformed/play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/a88e540c976324a2d08ef58eb2fd4c5e/transformed/play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f8769c698b74a9ca68dd6bd72e35e781/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f8769c698b74a9ca68dd6bd72e35e781/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/f8769c698b74a9ca68dd6bd72e35e781/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/738991df832050758276172bbcbaee80/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/738991df832050758276172bbcbaee80/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5cdc7ad6d19c78a7927a16a24beb9f4e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/5cdc7ad6d19c78a7927a16a24beb9f4e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/545a1bd654b3c51446aab73afe2424c5/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/738991df832050758276172bbcbaee80/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/738991df832050758276172bbcbaee80/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/738991df832050758276172bbcbaee80/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/154874035fe59fb7ec80dc0a9a24db47/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/154874035fe59fb7ec80dc0a9a24db47/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/154874035fe59fb7ec80dc0a9a24db47/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:24:13-63
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+permission#com.lylo.tablet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+uses-permission#com.lylo.tablet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.15.0] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/e006cf9a420b64bcd80a60c5ea4e5515/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/dwainyumco/.gradle/caches/8.10.2/transforms/58067fafe6e1a69aaf288fa65520a3b4/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:25-92

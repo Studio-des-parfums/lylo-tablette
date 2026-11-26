@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-debug-66:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-main-68:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-debug-66:/drawable-nodpi_avatar_h.jpg.flat",
+        "source": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-main-68:/drawable-nodpi/avatar_h.jpg"
+    },
+    {
+        "merged": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-debug-66:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-main-68:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-debug-66:/xml_network_security_config.xml.flat",
+        "source": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-main-68:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-debug-66:/drawable-nodpi_background_lylo.png.flat",
+        "source": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-main-68:/drawable-nodpi/background_lylo.png"
+    },
+    {
+        "merged": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-debug-66:/xml_backup_rules.xml.flat",
+        "source": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-main-68:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-debug-66:/drawable_avatar_placeholder.xml.flat",
+        "source": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-main-68:/drawable/avatar_placeholder.xml"
+    },
+    {
+        "merged": "com.lylo.tablet.app-debug-66:/drawable-nodpi_background_lylo.png.flat",
+        "source": "com.lylo.tablet.app-main-68:/drawable-nodpi/background_lylo.png"
+    },
+    {
+        "merged": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-debug-66:/drawable-nodpi_logo_sdp.png.flat",
+        "source": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-main-68:/drawable-nodpi/logo_sdp.png"
+    },
+    {
+        "merged": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-debug-66:/drawable-nodpi_avatar_f.jpg.flat",
+        "source": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-main-68:/drawable-nodpi/avatar_f.jpg"
+    },
+    {
+        "merged": "com.lylo.tablet.app-debug-66:/drawable-nodpi_logo_les_francais_avancent.png.flat",
+        "source": "com.lylo.tablet.app-main-68:/drawable-nodpi/logo_les_francais_avancent.png"
+    },
+    {
+        "merged": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-debug-66:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/dwainyumco/.gradle/daemon/8.10.2/com.lylo.tablet.app-main-68:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.lylo.tablet.app-debug-66:/drawable-nodpi_logo_help.png.flat",
+        "source": "com.lylo.tablet.app-main-68:/drawable-nodpi/logo_help.png"
+    }
+]
