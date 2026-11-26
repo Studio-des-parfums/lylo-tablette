@@ -59,6 +59,8 @@ fun SendFormulaMailButton(
     reference: String,
     modifier: Modifier = Modifier,
     iconOnly: Boolean = true,
+    /** Prénom donné à l'agent pendant la session vocale : pré-remplit le champ (modifiable). */
+    initialFirstName: String? = null,
 ) {
     val strings = LocalStringResolver.current
     val scope = rememberCoroutineScope()
@@ -69,6 +71,13 @@ fun SendFormulaMailButton(
     var company by remember { mutableStateOf("") }
     var jobTitle by remember { mutableStateOf("") }
     var status by remember { mutableStateOf("idle") } // idle | sending | sent | error
+
+    fun openDialog() {
+        // Pré-remplit au moment de l'ouverture (le profil peut arriver après la composition),
+        // sans écraser une saisie déjà faite.
+        if (firstName.isEmpty() && !initialFirstName.isNullOrBlank()) firstName = initialFirstName
+        open = true
+    }
 
     fun close() {
         open = false
@@ -102,14 +111,14 @@ fun SendFormulaMailButton(
         RoundIconButton(
             icon = Icons.Default.Mail,
             contentDescription = strings.get(R.string.send_mail_button),
-            onClick = { open = true },
+            onClick = { openDialog() },
             iconSize = 16,
             modifier = modifier,
         )
     } else {
         PrimaryPillButton(
             text = strings.get(R.string.send_mail_button),
-            onClick = { open = true },
+            onClick = { openDialog() },
             trailingIcon = Icons.Default.Mail,
             modifier = modifier,
         )

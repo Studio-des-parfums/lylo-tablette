@@ -188,6 +188,8 @@ data class FormulaRow(
     val reference: String,
     @SerialName("customer_name") val customerName: String? = null,
     @SerialName("customer_email") val customerEmail: String? = null,
+    @SerialName("customer_first_name") val customerFirstName: String? = null,
+    @SerialName("perfume_name") val perfumeName: String? = null,
     val profile: String? = null,
     @SerialName("formula_type") val formulaType: String? = null,
     val language: String? = null,

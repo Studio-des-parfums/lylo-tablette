@@ -100,6 +100,8 @@
     <string name="formula_version">Версия</string>
     <string name="formulas_close">Закрыть</string>
     <string name="formulas_col_customer">Клиент</string>
+    <string name="formulas_col_first_name">Имя</string>
+    <string name="formulas_col_perfume_name">Аромат</string>
     <string name="formulas_col_date">Дата</string>
     <string name="formulas_col_email">Email</string>
     <string name="formulas_col_reference">Номер</string>

@@ -92,6 +92,7 @@ fun RecommendationsScreen(
 
     val formulas by sessionViewModel.formulas.collectAsState()
     val formulaReference by sessionViewModel.formulaReference.collectAsState()
+    val profile by sessionViewModel.profile.collectAsState()
     val sessionData by sessionViewModel.sessionData.collectAsState()
     val agentName by sessionViewModel.agentName.collectAsState()
     val agentState by sessionViewModel.agentState.collectAsState()
@@ -171,7 +172,7 @@ fun RecommendationsScreen(
                             // l'événement formula_selected de l'agent, désactivé en attendant.
                             val ref = formulaReference
                             if (ref != null) {
-                                SendFormulaMailButton(reference = ref)
+                                SendFormulaMailButton(reference = ref, initialFirstName = profile["first_name"])
                             } else {
                                 RoundIconButton(
                                     icon = Icons.Default.Mail,

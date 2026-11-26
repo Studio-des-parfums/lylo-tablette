@@ -189,7 +189,8 @@ fun FormulasScreen(
             ) {
                 Row(modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 12.dp)) {
                     HeaderCell(strings.get(R.string.formulas_col_reference), 1.2f)
-                    HeaderCell(strings.get(R.string.formulas_col_customer), 1f)
+                    HeaderCell(strings.get(R.string.formulas_col_perfume_name), 1.1f)
+                    HeaderCell(strings.get(R.string.formulas_col_first_name), 0.9f)
                     HeaderCell(strings.get(R.string.formulas_col_email), 1.4f)
                     HeaderCell(strings.get(R.string.formulas_col_type), 0.7f)
                     HeaderCell(strings.get(R.string.formulas_col_date), 1f)
@@ -209,7 +210,8 @@ fun FormulasScreen(
                                 verticalAlignment = Alignment.CenterVertically,
                             ) {
                                 BodyCell(f.reference, 1.2f, mono = true)
-                                BodyCell(f.customerName ?: "—", 1f)
+                                BodyCell(f.perfumeName ?: "—", 1.1f)
+                                BodyCell(f.customerFirstName ?: "—", 0.9f)
                                 BodyCell(f.customerEmail ?: "—", 1.4f)
                                 BodyCell(f.formulaType ?: "—", 0.7f)
                                 BodyCell(formatDate(f.createdAt), 1f, dim = true)

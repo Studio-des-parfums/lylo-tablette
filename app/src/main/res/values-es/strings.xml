@@ -100,6 +100,8 @@
     <string name="formula_version">Versión</string>
     <string name="formulas_close">Cerrar</string>
     <string name="formulas_col_customer">Cliente</string>
+    <string name="formulas_col_first_name">Nombre</string>
+    <string name="formulas_col_perfume_name">Perfume</string>
     <string name="formulas_col_date">Fecha</string>
     <string name="formulas_col_email">Email</string>
     <string name="formulas_col_reference">Referencia</string>

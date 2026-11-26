@@ -100,6 +100,8 @@
     <string name="formula_version">الإصدار</string>
     <string name="formulas_close">إغلاق</string>
     <string name="formulas_col_customer">العميل</string>
+    <string name="formulas_col_first_name">الاسم الأول</string>
+    <string name="formulas_col_perfume_name">العطر</string>
     <string name="formulas_col_date">التاريخ</string>
     <string name="formulas_col_email">البريد الإلكتروني</string>
     <string name="formulas_col_reference">المرجع</string>
