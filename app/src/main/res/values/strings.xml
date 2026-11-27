@@ -371,7 +371,11 @@
     <string name="robot_settings_unavailable">The robot is not connected: this tablet does not have the robot services.</string>
     <string name="robot_settings_empty">No point saved on the robot\'s active map.</string>
     <string name="robot_settings_clear">Remove the selected point</string>
-    <string name="robot_go_button">Send the robot to the selected point</string>
+    <string name="robot_settings_return_charge">Return to charging station</string>
+    <string name="robot_settings_return_charge_sent">The robot is heading back to charge.</string>
+    <string name="robot_settings_return_charge_failed">Could not send the robot to its charging station.</string>
+    <string name="robot_go_button">Take me there</string>
+    <string name="robot_go_moving">On my way…</string>
     <string name="robot_go_arrived">The robot has arrived.</string>
     <string name="robot_go_failed">The robot could not move: %1$s</string>
 </resources>

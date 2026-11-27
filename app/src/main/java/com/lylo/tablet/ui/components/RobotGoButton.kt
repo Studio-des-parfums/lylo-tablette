@@ -17,7 +17,8 @@ import com.lylo.tablet.robot.RobotController
 import com.lylo.tablet.robot.RobotController.NavigationState
 
 /**
- * Bouton de la barre d'outils des écrans de formule : envoie le robot vers le point choisi
+ * Bouton « Emmène-moi » de la barre d'outils des écrans de formule : le robot accompagne
+ * le visiteur vers le point choisi
  * dans RobotSettingsScreen. Masqué si aucun point n'est configuré ou si l'app ne tourne pas
  * sur le robot.
  */
@@ -43,11 +44,12 @@ fun RobotGoButton(modifier: Modifier = Modifier) {
 
     if (goal.isNullOrBlank() || !available) return
 
-    RoundIconButton(
-        icon = Icons.Default.SmartToy,
-        contentDescription = strings.get(R.string.robot_go_button),
-        loading = navigation is NavigationState.Moving,
+    val moving = navigation is NavigationState.Moving
+    PrimaryPillButton(
+        text = strings.get(if (moving) R.string.robot_go_moving else R.string.robot_go_button),
         onClick = { RobotController.navigateTo(goal) },
+        trailingIcon = Icons.Default.SmartToy,
+        enabled = !moving,
         modifier = modifier,
     )
 }

@@ -75,6 +75,7 @@ import com.lylo.tablet.ui.components.FormulaPyramidPanel
 import com.lylo.tablet.ui.components.FormulaQrCode
 import com.lylo.tablet.ui.components.Navbar
 import com.lylo.tablet.ui.components.PrimaryPillButton
+import com.lylo.tablet.robot.RobotController
 import com.lylo.tablet.ui.components.RobotGoButton
 import com.lylo.tablet.ui.components.RoundIconButton
 import com.lylo.tablet.ui.components.RoundIconStyle
@@ -453,7 +454,11 @@ private fun FormulaJourney(
                             RobotGoButton()
                             PrimaryPillButton(
                                 text = if (participant != null && !isLastParticipant) strings.get(R.string.quiz_results_next_person) else strings.get(R.string.quiz_results_finish),
-                                onClick = onFinish ?: onExit,
+                                onClick = {
+                                    // Dernière personne : le robot retourne à sa station de recharge.
+                                    if (participant == null || isLastParticipant) RobotController.returnToCharge()
+                                    (onFinish ?: onExit)()
+                                },
                                 modifier = Modifier.padding(start = 4.dp),
                             )
                         }

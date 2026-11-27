@@ -1,5 +1,9 @@
 package com.lylo.tablet.ui.screens.robot
 
+import android.widget.Toast
+import androidx.compose.material.icons.filled.BatteryChargingFull
+import com.lylo.tablet.ui.components.PrimaryPillButton
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -116,6 +120,22 @@ fun RobotSettingsScreen(
                 fontWeight = FontWeight.SemiBold,
                 color = LyloPrimary,
             )
+
+            // Renvoi manuel à la station de recharge (même action que « Terminer »).
+            if (available) {
+                PrimaryPillButton(
+                    text = strings.get(R.string.robot_settings_return_charge),
+                    onClick = {
+                        val sent = RobotController.returnToCharge()
+                        Toast.makeText(
+                            context,
+                            strings.get(if (sent) R.string.robot_settings_return_charge_sent else R.string.robot_settings_return_charge_failed),
+                            Toast.LENGTH_LONG,
+                        ).show()
+                    },
+                    trailingIcon = Icons.Default.BatteryChargingFull,
+                )
+            }
 
             when {
                 !available -> Text(strings.get(R.string.robot_settings_unavailable), color = Color(0xFFDC2626))

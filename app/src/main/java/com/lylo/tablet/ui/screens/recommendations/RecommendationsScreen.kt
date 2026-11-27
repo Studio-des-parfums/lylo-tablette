@@ -52,6 +52,7 @@ import com.lylo.tablet.ui.components.FormulaPyramidPanel
 import com.lylo.tablet.ui.components.FormulaQrCode
 import com.lylo.tablet.ui.components.Navbar
 import com.lylo.tablet.ui.components.PrimaryPillButton
+import com.lylo.tablet.robot.RobotController
 import com.lylo.tablet.ui.components.RobotGoButton
 import com.lylo.tablet.ui.components.RoundIconButton
 import com.lylo.tablet.ui.components.SendFormulaMailButton
@@ -186,7 +187,10 @@ fun RecommendationsScreen(
                             // Terminer : fin de session et retour à l'accueil
                             PrimaryPillButton(
                                 text = strings.get(R.string.quiz_results_finish),
-                                onClick = onReturnHome,
+                                onClick = {
+                                    RobotController.returnToCharge()
+                                    onReturnHome()
+                                },
                                 modifier = Modifier.padding(start = 4.dp),
                             )
                         }

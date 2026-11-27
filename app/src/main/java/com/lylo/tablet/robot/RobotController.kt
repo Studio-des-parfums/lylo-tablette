@@ -19,6 +19,8 @@ private const val NAVIGATION_REQUEST_ID = 2001
 private const val PLACE_LIST_REQUEST_ID = 2002
 private const val COORDINATE_DEVIATION_METERS = 0.2
 private const val NAVIGATION_TIMEOUT_MS = 120_000L
+private const val CHARGE_REQUEST_ID = 3
+private const val CHARGE_TIMEOUT_MS = 300_000L
 
 /**
  * Pont vers le SDK OrionStar (robotservice.jar), repris de nono-le-robot.
@@ -141,6 +143,38 @@ object RobotController {
             }
             startNavigation(resolved)
         }
+    }
+
+    /**
+     * Fin de parcours (« Terminer ») : renvoie le robot à sa station de recharge et l'y amarre.
+     * startNaviToAutoChargeAction vise la station enregistrée par le robot lui-même : aucune
+     * dépendance au nom du point (« Point de recharge » varie selon la langue de la carte).
+     * Fire-and-forget : l'écran retourne à l'accueil sans attendre l'arrivée. Renvoie false si
+     * l'ordre n'a pas pu être envoyé.
+     */
+    fun returnToCharge(): Boolean {
+        if (!_available.value) return false
+        if (_navigation.value is NavigationState.Moving) stopNavigation()
+        @Suppress("DEPRECATION")
+        return runCatching {
+            val code = robotApi.startNaviToAutoChargeAction(
+                CHARGE_REQUEST_ID,
+                CHARGE_TIMEOUT_MS,
+                object : ActionListener() {
+                    override fun onResult(status: Int, responseString: String?, extraData: String?) {
+                        Log.d(TAG, "Return to charge result status=$status response=$responseString")
+                    }
+
+                    @Deprecated("Deprecated in robot SDK")
+                    override fun onError(errorCode: Int, errorString: String?) {
+                        Log.w(TAG, "Return to charge error code=$errorCode message=$errorString")
+                    }
+                },
+            )
+            if (code < 0) Log.w(TAG, "Return to charge refused code=$code")
+            code >= 0
+        }.onFailure { Log.e(TAG, "Unable to return to charge", it) }
+            .getOrDefault(false)
     }
 
     fun stopNavigation() {

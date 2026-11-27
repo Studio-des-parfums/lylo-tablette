@@ -371,7 +371,11 @@
     <string name="robot_settings_unavailable">Le robot n\'est pas connecté : cette tablette n\'a pas les services robot.</string>
     <string name="robot_settings_empty">Aucun point enregistré sur la carte active du robot.</string>
     <string name="robot_settings_clear">Retirer le point sélectionné</string>
-    <string name="robot_go_button">Envoyer le robot au point configuré</string>
+    <string name="robot_settings_return_charge">Retour au point de recharge</string>
+    <string name="robot_settings_return_charge_sent">Le robot retourne se recharger.</string>
+    <string name="robot_settings_return_charge_failed">Impossible d\'envoyer le robot à sa station de recharge.</string>
+    <string name="robot_go_button">Emmène-moi</string>
+    <string name="robot_go_moving">En route…</string>
     <string name="robot_go_arrived">Le robot est arrivé.</string>
     <string name="robot_go_failed">Le robot n\'a pas pu se déplacer : %1$s</string>
 </resources>

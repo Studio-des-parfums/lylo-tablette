@@ -371,7 +371,11 @@
     <string name="robot_settings_unavailable">الروبوت غير متصل: هذا الجهاز اللوحي لا يحتوي على خدمات الروبوت.</string>
     <string name="robot_settings_empty">لا توجد نقاط محفوظة على الخريطة النشطة للروبوت.</string>
     <string name="robot_settings_clear">إزالة النقطة المحددة</string>
-    <string name="robot_go_button">إرسال الروبوت إلى النقطة المحددة</string>
+    <string name="robot_settings_return_charge">العودة إلى نقطة الشحن</string>
+    <string name="robot_settings_return_charge_sent">يعود الروبوت للشحن.</string>
+    <string name="robot_settings_return_charge_failed">تعذّر إرسال الروبوت إلى محطة الشحن.</string>
+    <string name="robot_go_button">خذني إلى هناك</string>
+    <string name="robot_go_moving">في الطريق…</string>
     <string name="robot_go_arrived">وصل الروبوت.</string>
     <string name="robot_go_failed">تعذّر على الروبوت التحرك: %1$s</string>
 </resources>

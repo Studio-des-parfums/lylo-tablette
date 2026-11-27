@@ -371,7 +371,11 @@
     <string name="robot_settings_unavailable">Робот не подключён: на этом планшете нет сервисов робота.</string>
     <string name="robot_settings_empty">На активной карте робота нет сохранённых точек.</string>
     <string name="robot_settings_clear">Убрать выбранную точку</string>
-    <string name="robot_go_button">Отправить робота к выбранной точке</string>
+    <string name="robot_settings_return_charge">Вернуться на зарядку</string>
+    <string name="robot_settings_return_charge_sent">Робот возвращается на зарядку.</string>
+    <string name="robot_settings_return_charge_failed">Не удалось отправить робота на зарядную станцию.</string>
+    <string name="robot_go_button">Проводи меня</string>
+    <string name="robot_go_moving">В пути…</string>
     <string name="robot_go_arrived">Робот прибыл.</string>
     <string name="robot_go_failed">Робот не смог переместиться: %1$s</string>
 </resources>
