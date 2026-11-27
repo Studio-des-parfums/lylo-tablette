@@ -371,6 +371,12 @@
     <string name="robot_settings_unavailable">Робот не подключён: на этом планшете нет сервисов робота.</string>
     <string name="robot_settings_empty">На активной карте робота нет сохранённых точек.</string>
     <string name="robot_settings_clear">Убрать выбранную точку</string>
+    <string name="robot_settings_greeting">Голосовое приветствие</string>
+    <string name="robot_settings_greeting_hint">Воспроизводит сообщение, когда кто-то подходит, на главной странице.</string>
+    <string name="robot_settings_greeting_frequency">Частота</string>
+    <string name="robot_settings_greeting_always">Каждый раз</string>
+    <string name="robot_settings_greeting_every_s">Каждые %1$d с</string>
+    <string name="robot_settings_greeting_every_min">Каждые %1$d мин</string>
     <string name="robot_settings_return_charge">Вернуться на зарядку</string>
     <string name="robot_settings_return_charge_sent">Робот возвращается на зарядку.</string>
     <string name="robot_settings_return_charge_failed">Не удалось отправить робота на зарядную станцию.</string>

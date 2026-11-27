@@ -371,6 +371,12 @@
     <string name="robot_settings_unavailable">Der Roboter ist nicht verbunden: Dieses Tablet hat keine Roboterdienste.</string>
     <string name="robot_settings_empty">Keine Punkte auf der aktiven Karte des Roboters gespeichert.</string>
     <string name="robot_settings_clear">Ausgewählten Punkt entfernen</string>
+    <string name="robot_settings_greeting">Sprachbegrüßung</string>
+    <string name="robot_settings_greeting_hint">Spielt eine Nachricht ab, wenn sich jemand nähert (Startseite).</string>
+    <string name="robot_settings_greeting_frequency">Häufigkeit</string>
+    <string name="robot_settings_greeting_always">Jedes Mal</string>
+    <string name="robot_settings_greeting_every_s">Alle %1$d s</string>
+    <string name="robot_settings_greeting_every_min">Alle %1$d Min.</string>
     <string name="robot_settings_return_charge">Zurück zur Ladestation</string>
     <string name="robot_settings_return_charge_sent">Der Roboter fährt zum Laden zurück.</string>
     <string name="robot_settings_return_charge_failed">Der Roboter konnte nicht zur Ladestation geschickt werden.</string>

@@ -371,6 +371,12 @@
     <string name="robot_settings_unavailable">El robot no está conectado: esta tableta no tiene los servicios del robot.</string>
     <string name="robot_settings_empty">No hay puntos guardados en el mapa activo del robot.</string>
     <string name="robot_settings_clear">Quitar el punto seleccionado</string>
+    <string name="robot_settings_greeting">Mensaje de bienvenida</string>
+    <string name="robot_settings_greeting_hint">Reproduce un mensaje cuando alguien se acerca, en la página de inicio.</string>
+    <string name="robot_settings_greeting_frequency">Frecuencia</string>
+    <string name="robot_settings_greeting_always">Cada vez</string>
+    <string name="robot_settings_greeting_every_s">Cada %1$d s</string>
+    <string name="robot_settings_greeting_every_min">Cada %1$d min</string>
     <string name="robot_settings_return_charge">Volver a la estación de carga</string>
     <string name="robot_settings_return_charge_sent">El robot vuelve a cargarse.</string>
     <string name="robot_settings_return_charge_failed">No se pudo enviar el robot a su estación de carga.</string>

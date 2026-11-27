@@ -1,6 +1,9 @@
 package com.lylo.tablet.ui.screens.robot
 
 import android.widget.Toast
+import androidx.compose.material3.Switch
+import androidx.compose.material3.SwitchDefaults
+import com.lylo.tablet.robot.GreetingPlayer
 import androidx.compose.material.icons.filled.BatteryChargingFull
 import com.lylo.tablet.ui.components.PrimaryPillButton
 
@@ -16,8 +19,10 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.widthIn
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -55,6 +60,7 @@ import com.lylo.tablet.ui.theme.LyloPrimary
  * Configuration robot (réservée au compte de l'équipe, icône dans la navbar) : choix du point
  * de la carte vers lequel le bouton robot des écrans de formule envoie le robot.
  */
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun RobotSettingsScreen(
     user: AuthUser?,
@@ -65,6 +71,11 @@ fun RobotSettingsScreen(
     val prefs = remember { LocalPrefs(context) }
 
     LaunchedEffect(user) { if (user == null) onNavigateHome() }
+    // Pas de suivi du regard pendant la configuration (le robot bougerait sous les mains).
+    androidx.compose.runtime.DisposableEffect(Unit) {
+        RobotController.setFocusEnabled(false)
+        onDispose { RobotController.setFocusEnabled(true) }
+    }
     if (user == null) return
 
     val available by RobotController.available.collectAsState()
@@ -92,7 +103,12 @@ fun RobotSettingsScreen(
 
     Box(modifier = Modifier.fillMaxSize().background(LyloBackgroundLight), contentAlignment = Alignment.TopCenter) {
         Column(
-            modifier = Modifier.widthIn(max = 600.dp).fillMaxSize().padding(horizontal = 16.dp, vertical = 32.dp),
+            // Page entière scrollable : d'autres réglages viendront s'ajouter.
+            modifier = Modifier
+                .widthIn(max = 600.dp)
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState())
+                .padding(horizontal = 16.dp, vertical = 32.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -121,6 +137,64 @@ fun RobotSettingsScreen(
                 color = LyloPrimary,
             )
 
+            // Message vocal d'accueil (détection d'une personne sur la page d'accueil)
+            var greetingOn by remember { mutableStateOf(GreetingPlayer.soundEnabled) }
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(12.dp))
+                    .background(Color.White)
+                    .border(1.dp, LyloPrimary.copy(alpha = 0.15f), RoundedCornerShape(12.dp))
+                    .padding(horizontal = 16.dp, vertical = 10.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(strings.get(R.string.robot_settings_greeting), style = MaterialTheme.typography.bodyLarge, color = LyloPrimary)
+                    Text(strings.get(R.string.robot_settings_greeting_hint), style = MaterialTheme.typography.bodySmall, color = Color(0xFF9CA3AF))
+                }
+                Switch(
+                    checked = greetingOn,
+                    onCheckedChange = {
+                        greetingOn = it
+                        GreetingPlayer.setSoundEnabled(context, it)
+                    },
+                    colors = SwitchDefaults.colors(checkedThumbColor = Color.White, checkedTrackColor = LyloPrimary),
+                )
+            }
+
+            // Fréquence : à chaque détection ou avec un délai minimum entre deux messages.
+            if (greetingOn) {
+                var cooldown by remember { mutableIntStateOf(GreetingPlayer.cooldownSeconds) }
+                Text(strings.get(R.string.robot_settings_greeting_frequency), style = MaterialTheme.typography.bodyMedium, color = LyloPrimary)
+                FlowRow(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    GreetingPlayer.COOLDOWN_CHOICES.forEach { seconds ->
+                        val label = when {
+                            seconds == 0 -> strings.get(R.string.robot_settings_greeting_always)
+                            seconds < 60 -> strings.get(R.string.robot_settings_greeting_every_s, seconds)
+                            else -> strings.get(R.string.robot_settings_greeting_every_min, seconds / 60)
+                        }
+                        val isSelected = cooldown == seconds
+                        Text(
+                            label,
+                            style = MaterialTheme.typography.labelLarge,
+                            color = if (isSelected) Color.White else LyloPrimary,
+                            modifier = Modifier
+                                .clip(RoundedCornerShape(999.dp))
+                                .background(if (isSelected) LyloPrimary else Color.White)
+                                .border(1.dp, LyloPrimary.copy(alpha = if (isSelected) 1f else 0.25f), RoundedCornerShape(999.dp))
+                                .clickable {
+                                    cooldown = seconds
+                                    GreetingPlayer.setCooldownSeconds(context, seconds)
+                                }
+                                .padding(horizontal = 14.dp, vertical = 8.dp),
+                        )
+                    }
+                }
+            }
+
             // Renvoi manuel à la station de recharge (même action que « Terminer »).
             if (available) {
                 PrimaryPillButton(
@@ -144,8 +218,10 @@ fun RobotSettingsScreen(
                 }
                 error != null -> Text(error.orEmpty(), color = Color(0xFFDC2626))
                 places.isEmpty() -> Text(strings.get(R.string.robot_settings_empty), color = Color(0xFF9CA3AF))
-                else -> LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    items(places) { place ->
+                // Column (pas LazyColumn) : une liste paresseuse ne peut pas vivre dans un parent
+                // scrollable ; la carte ne compte que quelques points.
+                else -> Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    places.forEach { place ->
                         PlaceRow(place = place, selected = place == selected, onClick = { select(place) })
                     }
                 }

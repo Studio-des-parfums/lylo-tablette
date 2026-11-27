@@ -1,6 +1,7 @@
 package com.lylo.tablet.robot
 
 import android.content.Context
+import android.os.Handler
 import android.os.HandlerThread
 import android.util.Log
 import com.ainirobot.coreservice.client.ApiListener
@@ -8,7 +9,11 @@ import com.ainirobot.coreservice.client.RobotApi
 import com.ainirobot.coreservice.client.listener.ActionListener
 import com.ainirobot.coreservice.client.listener.CommandListener
 import com.ainirobot.coreservice.client.module.ModuleCallbackApi
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import org.json.JSONArray
@@ -21,6 +26,15 @@ private const val COORDINATE_DEVIATION_METERS = 0.2
 private const val NAVIGATION_TIMEOUT_MS = 120_000L
 private const val CHARGE_REQUEST_ID = 3
 private const val CHARGE_TIMEOUT_MS = 300_000L
+private const val FOCUS_REQUEST_ID = 4
+/** Distance (m) en deçà de laquelle le robot se tourne vers la personne. */
+private const val FOCUS_MAX_DISTANCE_M = 1.5f
+/** Délai avant d'abandonner une personne sortie du champ, puis de chercher la suivante. */
+private const val FOCUS_LOST_TIMEOUT_MS = 5_000L
+private const val FOCUS_RESTART_DELAY_MS = 1_500L
+// Statut observé sur le robot quand le suivi accroche une personne (« Track target succeed »).
+// STATUS_GUEST_APPEAR (1002) du SDK n'est jamais émis par SmartFocusFollow.
+private const val STATUS_TRACK_TARGET_SUCCEED = 1013
 
 /**
  * Pont vers le SDK OrionStar (robotservice.jar), repris de nono-le-robot.
@@ -32,6 +46,13 @@ object RobotController {
     private var callbackThread: HandlerThread? = null
     @Volatile private var connecting = false
     @Volatile private var connected = false
+
+    // ── Suivi du regard (SmartFocusFollow) ──
+    @Volatile private var focusWanted = false
+    @Volatile private var focusRunning = false
+    @Volatile private var chargeReturning = false
+    private var focusHandler: Handler? = null
+    private val focusScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
     private val _available = MutableStateFlow(false)
     val available: StateFlow<Boolean> = _available.asStateFlow()
@@ -50,7 +71,7 @@ object RobotController {
         override fun onSendRequest(reqId: Int, reqType: String?, reqText: String?, reqParam: String?): Boolean = true
         override fun onHWReport(hwFunction: Int, cmdType: String?, hwReport: String?) {}
         override fun onSuspend() { _available.value = false }
-        override fun onRecovery() { _available.value = true }
+        override fun onRecovery() { _available.value = true; tryStartFocus() }
     }
 
     /** Idempotent : appelé au démarrage de l'app et à chaque retour au premier plan (comme nono). */
@@ -70,6 +91,8 @@ object RobotController {
                     robotApi.setCallback(moduleCallback)
                     robotApi.setResponseThread(thread)
                     _available.value = true
+                    focusHandler = Handler(thread.looper)
+                    tryStartFocus()
                 }
 
                 override fun handleApiDisabled() {
@@ -80,6 +103,7 @@ object RobotController {
 
                 override fun handleApiDisconnected() {
                     Log.w(TAG, "Robot API disconnected")
+                    focusRunning = false
                     connecting = false
                     connected = false
                     _available.value = false
@@ -91,6 +115,76 @@ object RobotController {
             connecting = false
             _available.value = false
         }
+    }
+
+    init {
+        // Pas de suivi du regard pendant un déplacement : la navigation pilote les moteurs.
+        focusScope.launch {
+            _navigation.collect { state ->
+                if (state is NavigationState.Moving) pauseFocus() else tryStartFocus()
+            }
+        }
+    }
+
+    /**
+     * Suivi du regard : le robot se tourne vers la personne la plus proche (≤ [FOCUS_MAX_DISTANCE_M])
+     * et la suit. Actif tant que l'app est au premier plan, sauf pendant les déplacements
+     * (« Emmène-moi », retour à la recharge). Relancé automatiquement quand la personne est perdue.
+     */
+    fun setFocusEnabled(enabled: Boolean) {
+        focusWanted = enabled
+        if (enabled) tryStartFocus() else pauseFocus()
+    }
+
+    private fun tryStartFocus() {
+        if (!focusWanted || focusRunning || chargeReturning || !_available.value) return
+        if (_navigation.value is NavigationState.Moving) return
+        focusRunning = true
+        runCatching {
+            val code = robotApi.startSmartFocusFollow(
+                FOCUS_REQUEST_ID,
+                FOCUS_LOST_TIMEOUT_MS,
+                FOCUS_MAX_DISTANCE_M,
+                object : ActionListener() {
+                    override fun onResult(status: Int, responseString: String?, extraData: String?) {
+                        Log.d(TAG, "Focus follow ended status=$status response=$responseString")
+                        onFocusEnded()
+                    }
+
+                    @Deprecated("Deprecated in robot SDK")
+                    override fun onError(errorCode: Int, errorString: String?) {
+                        Log.d(TAG, "Focus follow error code=$errorCode message=$errorString")
+                        onFocusEnded()
+                    }
+
+                    @Deprecated("Deprecated in robot SDK")
+                    override fun onStatusUpdate(status: Int, data: String?) {
+                        Log.d(TAG, "Focus follow status=$status data=$data")
+                        // Une personne entre dans le champ : message d'accueil (si page d'accueil).
+                        if (status == STATUS_TRACK_TARGET_SUCCEED) GreetingPlayer.onPersonDetected()
+                    }
+                },
+            )
+            Log.d(TAG, "Focus follow start code=$code")
+            if (code < 0) onFocusEnded()
+        }.onFailure {
+            Log.w(TAG, "Unable to start focus follow", it)
+            focusRunning = false
+        }
+    }
+
+    /** Personne perdue (ou refus) : on attend un peu puis on cherche la suivante. */
+    private fun onFocusEnded() {
+        focusRunning = false
+        focusHandler?.postDelayed({ tryStartFocus() }, FOCUS_RESTART_DELAY_MS)
+    }
+
+    private fun pauseFocus() {
+        focusHandler?.removeCallbacksAndMessages(null)
+        if (!focusRunning) return
+        focusRunning = false
+        runCatching { robotApi.stopSmartFocusFollow(FOCUS_REQUEST_ID) }
+            .onFailure { Log.w(TAG, "stopSmartFocusFollow failed", it) }
     }
 
     /** Points enregistrés sur la carte active du robot. */
@@ -155,6 +249,8 @@ object RobotController {
     fun returnToCharge(): Boolean {
         if (!_available.value) return false
         if (_navigation.value is NavigationState.Moving) stopNavigation()
+        chargeReturning = true
+        pauseFocus()
         @Suppress("DEPRECATION")
         return runCatching {
             val code = robotApi.startNaviToAutoChargeAction(
@@ -163,15 +259,23 @@ object RobotController {
                 object : ActionListener() {
                     override fun onResult(status: Int, responseString: String?, extraData: String?) {
                         Log.d(TAG, "Return to charge result status=$status response=$responseString")
+                        chargeReturning = false
+                        tryStartFocus()
                     }
 
                     @Deprecated("Deprecated in robot SDK")
                     override fun onError(errorCode: Int, errorString: String?) {
                         Log.w(TAG, "Return to charge error code=$errorCode message=$errorString")
+                        chargeReturning = false
+                        tryStartFocus()
                     }
                 },
             )
-            if (code < 0) Log.w(TAG, "Return to charge refused code=$code")
+            if (code < 0) {
+                Log.w(TAG, "Return to charge refused code=$code")
+                chargeReturning = false
+                tryStartFocus()
+            }
             code >= 0
         }.onFailure { Log.e(TAG, "Unable to return to charge", it) }
             .getOrDefault(false)

@@ -57,6 +57,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        com.lylo.tablet.robot.GreetingPlayer.init(this)
         setContent {
             WithMinSmallestWidth {
                 LyloApp()
@@ -68,6 +69,18 @@ class MainActivity : ComponentActivity() {
         super.onStart()
         // Reconnexion au service robot s'il a été perdu pendant que l'app était en arrière-plan.
         com.lylo.tablet.robot.RobotController.connect(this)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Suivi du regard pendant tout le parcours, de l'accueil à la fin.
+        com.lylo.tablet.robot.RobotController.setFocusEnabled(true)
+    }
+
+    override fun onPause() {
+        com.lylo.tablet.robot.RobotController.setFocusEnabled(false)
+        com.lylo.tablet.robot.GreetingPlayer.stop()
+        super.onPause()
     }
 }
 

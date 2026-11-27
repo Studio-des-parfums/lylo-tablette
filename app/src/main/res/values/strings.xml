@@ -371,6 +371,12 @@
     <string name="robot_settings_unavailable">The robot is not connected: this tablet does not have the robot services.</string>
     <string name="robot_settings_empty">No point saved on the robot\'s active map.</string>
     <string name="robot_settings_clear">Remove the selected point</string>
+    <string name="robot_settings_greeting">Voice greeting</string>
+    <string name="robot_settings_greeting_hint">Plays a message when someone comes close on the home screen.</string>
+    <string name="robot_settings_greeting_frequency">Frequency</string>
+    <string name="robot_settings_greeting_always">Every time</string>
+    <string name="robot_settings_greeting_every_s">Every %1$d s</string>
+    <string name="robot_settings_greeting_every_min">Every %1$d min</string>
     <string name="robot_settings_return_charge">Return to charging station</string>
     <string name="robot_settings_return_charge_sent">The robot is heading back to charge.</string>
     <string name="robot_settings_return_charge_failed">Could not send the robot to its charging station.</string>
