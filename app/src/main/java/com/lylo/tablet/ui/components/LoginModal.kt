@@ -44,7 +44,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.window.Dialog
 import com.lylo.tablet.R
 import com.lylo.tablet.auth.GoogleSignInHelper
 import com.lylo.tablet.auth.GoogleSignInResult
@@ -80,7 +79,7 @@ fun LoginModal(
     var email by remember { mutableStateOf("") }
     var emailFormError by remember { mutableStateOf<String?>(null) }
 
-    Dialog(onDismissRequest = onDismiss) {
+    LyloDialog(onDismissRequest = onDismiss) {
         Box(
             modifier = Modifier
                 .widthIn(max = 380.dp)

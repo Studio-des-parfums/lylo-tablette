@@ -365,13 +365,26 @@
 
     <!-- Robot -->
     <string name="robot_settings_title">إعدادات الروبوت</string>
-    <string name="robot_settings_subtitle">اختر نقطة الخريطة التي يتوجه إليها الروبوت من شاشة التركيبة.</string>
-    <string name="robot_settings_current">النقطة المحددة: %1$s</string>
+    <string name="robot_settings_subtitle">اختر لكل مكان نقطة الخريطة التي يتوجه إليها الروبوت.</string>
+    <string name="robot_settings_current">%1$s ← نقطة الخريطة: %2$s</string>
+    <string name="robot_settings_destinations">الأماكن</string>
+    <string name="robot_destination_creation_room">غرفة الإبداع</string>
     <string name="robot_settings_none">لا شيء</string>
     <string name="robot_settings_unavailable">الروبوت غير متصل: هذا الجهاز اللوحي لا يحتوي على خدمات الروبوت.</string>
     <string name="robot_settings_empty">لا توجد نقاط محفوظة على الخريطة النشطة للروبوت.</string>
     <string name="robot_settings_clear">إزالة النقطة المحددة</string>
-    <string name="robot_go_button">إرسال الروبوت إلى النقطة المحددة</string>
+    <string name="robot_settings_greeting">رسالة ترحيب صوتية</string>
+    <string name="robot_settings_greeting_hint">تشغيل رسالة عند اقتراب شخص، في الصفحة الرئيسية.</string>
+    <string name="robot_settings_greeting_frequency">التكرار</string>
+    <string name="robot_settings_greeting_always">في كل مرة</string>
+    <string name="robot_settings_greeting_every_s">كل %1$d ث</string>
+    <string name="robot_settings_greeting_every_min">كل %1$d د</string>
+    <string name="robot_settings_greeting_every_minute">كل دقيقة</string>
+    <string name="robot_settings_return_charge">العودة إلى نقطة الشحن</string>
+    <string name="robot_settings_return_charge_sent">يعود الروبوت للشحن.</string>
+    <string name="robot_settings_return_charge_failed">تعذّر إرسال الروبوت إلى محطة الشحن.</string>
+    <string name="robot_go_button">خذني إلى هناك</string>
+    <string name="robot_go_moving">في الطريق…</string>
     <string name="robot_go_arrived">وصل الروبوت.</string>
     <string name="robot_go_failed">تعذّر على الروبوت التحرك: %1$s</string>
 </resources>

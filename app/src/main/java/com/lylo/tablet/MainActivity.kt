@@ -27,6 +27,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.unit.Density
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.text.style.TextAlign
@@ -55,8 +57,11 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        com.lylo.tablet.robot.GreetingPlayer.init(this)
         setContent {
-            LyloApp()
+            WithMinSmallestWidth {
+                LyloApp()
+            }
         }
     }
 
@@ -64,6 +69,18 @@ class MainActivity : ComponentActivity() {
         super.onStart()
         // Reconnexion au service robot s'il a été perdu pendant que l'app était en arrière-plan.
         com.lylo.tablet.robot.RobotController.connect(this)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Suivi du regard pendant tout le parcours, de l'accueil à la fin.
+        com.lylo.tablet.robot.RobotController.setFocusEnabled(true)
+    }
+
+    override fun onPause() {
+        com.lylo.tablet.robot.RobotController.setFocusEnabled(false)
+        com.lylo.tablet.robot.GreetingPlayer.stop()
+        super.onPause()
     }
 }
 
@@ -101,7 +118,9 @@ private fun LyloApp() {
         ) {
             // Android 15 (targetSdk 35) impose l'affichage bord à bord : sans ce padding, la navbar
             // passe sous la barre d'état et la TechBar sous la barre de navigation.
-            Box(modifier = Modifier.fillMaxSize().background(LyloBackgroundLight).systemBarsPadding()) {
+            // Robot OrionStar : la ROM dessine sous la barre d'état un second bandeau (micro, réseau,
+            // batterie) par-dessus l'app ; on décale le contenu pour qu'il ne masque pas la navbar.
+            Box(modifier = Modifier.fillMaxSize().background(LyloBackgroundLight).systemBarsPadding().padding(top = ROBOT_OVERLAY_TOP_DP.dp)) {
             if (!micGranted && !permissionRequested) {
                 PermissionGateScreen(
                     onRequest = {
@@ -153,3 +172,32 @@ private fun PermissionGateScreen(onRequest: () -> Unit) {
         }
     }
 }
+
+/** Largeur minimale garantie (en dp) sur le petit côté de l'écran. */
+private const val MIN_SMALLEST_WIDTH_DP = 720f
+
+/**
+ * Robot OrionStar : l'écran 1920×1080 déclare 560 dpi (densité de téléphone), soit ~549×309 dp —
+ * toute l'UI est agrandie ×3,5. La ROM ignore `wm density`, on corrige donc côté Compose en
+ * réduisant LocalDensity pour garantir au moins [MIN_SMALLEST_WIDTH_DP] sur le petit côté
+ * (1080 px → densité 1,5 → 1280×720 dp). Sans effet sur un écran déjà assez large.
+ *
+ * Pourquoi pas attachBaseContext + densityDpi : les fenêtres des Dialog étaient alors
+ * dimensionnées avec l'ancienne densité et coupaient leur contenu (champ email de la connexion).
+ * Les Dialog Compose héritent de LocalDensity, donc tout reste cohérent ici.
+ */
+@Composable
+private fun WithMinSmallestWidth(content: @Composable () -> Unit) {
+    val metrics = LocalContext.current.resources.displayMetrics
+    val current = LocalDensity.current
+    val shortSidePx = minOf(metrics.widthPixels, metrics.heightPixels)
+    val target = shortSidePx / MIN_SMALLEST_WIDTH_DP
+    if (target in 0f..current.density && target < current.density) {
+        CompositionLocalProvider(LocalDensity provides Density(target, fontScale = 1f), content = content)
+    } else {
+        content()
+    }
+}
+
+/** Hauteur du bandeau de la ROM OrionStar sous la barre d'état (≈ 45 px à 1,5×). */
+private const val ROBOT_OVERLAY_TOP_DP = 32

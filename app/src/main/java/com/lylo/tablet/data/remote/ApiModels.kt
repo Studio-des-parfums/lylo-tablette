@@ -23,6 +23,9 @@ data class StartSessionRequest(
     // décompte le quota du client côté back. L'email du visiteur est saisi à la fin (modale mail).
     @SerialName("owner_email") val ownerEmail: String? = null,
     val avatar: Boolean = true,
+    // Capacité « accompagnement » : le robot peut emmener le visiteur jusqu'à ce lieu en fin de
+    // parcours vocal ; l'agent le propose alors lui-même. Null = pas de robot / pas de lieu.
+    @SerialName("guide_destination") val guideDestination: String? = null,
 )
 
 @Serializable

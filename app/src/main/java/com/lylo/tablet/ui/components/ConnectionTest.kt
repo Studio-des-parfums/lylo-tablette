@@ -36,7 +36,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
-import androidx.compose.ui.window.Dialog
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.lylo.tablet.R
 import com.lylo.tablet.i18n.LocalStringResolver
@@ -85,7 +84,7 @@ fun ConnectionTest(modifier: Modifier = Modifier, viewModel: ConnectionTestViewM
     }
 
     if (open) {
-        Dialog(onDismissRequest = { viewModel.reset(); open = false }) {
+        LyloDialog(onDismissRequest = { viewModel.reset(); open = false }) {
             Column(
                 modifier = Modifier
                     .clip(RoundedCornerShape(20.dp))

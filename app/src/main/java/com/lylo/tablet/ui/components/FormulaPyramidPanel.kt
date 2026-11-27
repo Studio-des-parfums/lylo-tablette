@@ -36,7 +36,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.window.Dialog
 import com.lylo.tablet.R
 import com.lylo.tablet.data.Brand
 import com.lylo.tablet.data.model.Formula
@@ -153,7 +152,7 @@ fun FormulaPyramidPanel(
 
     // Remplacement d'une note : ouvert au clic sur une note, refermé après remplacement.
     activeNote?.let { (noteType, note) ->
-        Dialog(onDismissRequest = { activeNote = null }) {
+        LyloDialog(onDismissRequest = { activeNote = null }) {
             Box(
                 modifier = Modifier
                     .widthIn(max = 384.dp)

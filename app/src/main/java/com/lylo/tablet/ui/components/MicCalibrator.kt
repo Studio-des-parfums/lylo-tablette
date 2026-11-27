@@ -39,7 +39,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.window.Dialog
 import androidx.core.content.ContextCompat
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -81,7 +80,7 @@ fun MicCalibrator(modifier: Modifier = Modifier, viewModel: MicCalibratorViewMod
     }
 
     if (open) {
-        Dialog(onDismissRequest = { viewModel.stopTest(); open = false }) {
+        LyloDialog(onDismissRequest = { viewModel.stopTest(); open = false }) {
             Column(
                 modifier = Modifier
                     .clip(RoundedCornerShape(20.dp))

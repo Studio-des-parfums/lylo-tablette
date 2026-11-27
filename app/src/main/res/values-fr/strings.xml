@@ -365,13 +365,26 @@
 
     <!-- Robot -->
     <string name="robot_settings_title">Configuration du robot</string>
-    <string name="robot_settings_subtitle">Choisissez le point de la carte vers lequel le robot se rend depuis l\'écran de formule.</string>
-    <string name="robot_settings_current">Point sélectionné : %1$s</string>
+    <string name="robot_settings_subtitle">Choisissez, pour chaque lieu, le point de la carte vers lequel le robot se rend.</string>
+    <string name="robot_settings_current">%1$s → point de la carte : %2$s</string>
+    <string name="robot_settings_destinations">Lieux</string>
+    <string name="robot_destination_creation_room">Salle de création</string>
     <string name="robot_settings_none">aucun</string>
     <string name="robot_settings_unavailable">Le robot n\'est pas connecté : cette tablette n\'a pas les services robot.</string>
     <string name="robot_settings_empty">Aucun point enregistré sur la carte active du robot.</string>
     <string name="robot_settings_clear">Retirer le point sélectionné</string>
-    <string name="robot_go_button">Envoyer le robot au point configuré</string>
+    <string name="robot_settings_greeting">Message vocal d\'accueil</string>
+    <string name="robot_settings_greeting_hint">Joue un message quand quelqu\'un s\'approche, sur la page d\'accueil.</string>
+    <string name="robot_settings_greeting_frequency">Fréquence</string>
+    <string name="robot_settings_greeting_always">À chaque passage</string>
+    <string name="robot_settings_greeting_every_s">Toutes les %1$d s</string>
+    <string name="robot_settings_greeting_every_min">Toutes les %1$d min</string>
+    <string name="robot_settings_greeting_every_minute">Toutes les minutes</string>
+    <string name="robot_settings_return_charge">Retour au point de recharge</string>
+    <string name="robot_settings_return_charge_sent">Le robot retourne se recharger.</string>
+    <string name="robot_settings_return_charge_failed">Impossible d\'envoyer le robot à sa station de recharge.</string>
+    <string name="robot_go_button">Emmène-moi</string>
+    <string name="robot_go_moving">En route…</string>
     <string name="robot_go_arrived">Le robot est arrivé.</string>
     <string name="robot_go_failed">Le robot n\'a pas pu se déplacer : %1$s</string>
 </resources>

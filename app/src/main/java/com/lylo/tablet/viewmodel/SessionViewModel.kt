@@ -1,5 +1,12 @@
 package com.lylo.tablet.viewmodel
 
+import com.lylo.tablet.robot.RobotController
+import com.lylo.tablet.robot.RobotDestination
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.SharedFlow
+import kotlinx.coroutines.flow.asSharedFlow
+import kotlinx.serialization.json.buildJsonObject
+import kotlinx.serialization.json.put
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
@@ -68,6 +75,36 @@ class SessionViewModel(application: Application) : AndroidViewModel(application)
     // agent (événement formula_selected), utilisée pour l'envoi par mail à la demande.
     private val _formulaReference = MutableStateFlow<String?>(null)
     val formulaReference: StateFlow<String?> = _formulaReference.asStateFlow()
+
+    // ── Accompagnement par le robot piloté par l'agent vocal ──
+    // Messages JSON à envoyer à l'agent sur le control channel (LiveKitSessionManager).
+    private val _guideControlMessages = MutableSharedFlow<String>(extraBufferCapacity = 8)
+    val guideControlMessages: SharedFlow<String> = _guideControlMessages.asSharedFlow()
+    /** Session démarrée avec la capacité d'accompagnement (robot connecté + lieu configuré). */
+    @Volatile private var guideEnabledForSession = false
+    /** Trajet demandé par l'agent (robot_navigate) : inutile de lui annoncer le départ. */
+    @Volatile private var navigationRequestedByAgent = false
+
+    init {
+        // Départ manuel (bouton Emmène-moi), arrivée ou échec : on prévient l'agent.
+        viewModelScope.launch {
+            RobotController.navigationEvents.collect { event ->
+                if (!guideEnabledForSession || _sessionData.value == null) return@collect
+                val payload = when (event) {
+                    is RobotController.NavigationState.Moving ->
+                        if (navigationRequestedByAgent) null else """{"type":"robot_navigation_started"}"""
+                    is RobotController.NavigationState.Arrived -> """{"type":"robot_arrived"}"""
+                    is RobotController.NavigationState.Failed ->
+                        buildJsonObject { put("type", "robot_failed"); put("message", event.message) }.toString()
+                    RobotController.NavigationState.Idle -> null
+                }
+                if (event is RobotController.NavigationState.Arrived || event is RobotController.NavigationState.Failed) {
+                    navigationRequestedByAgent = false
+                }
+                payload?.let { _guideControlMessages.tryEmit(it) }
+            }
+        }
+    }
 
     /** Format de réponse du questionnaire de la session (nb de choix, cadrage). */
     private val _answerFormat = MutableStateFlow(AnswerFormat.DEFAULT)
@@ -156,6 +193,14 @@ class SessionViewModel(application: Application) : AndroidViewModel(application)
                 }
             }.getOrNull()
 
+            // Accompagnement proposé par l'agent seulement si le robot peut réellement y aller.
+            // L'agent annonce le NOM du lieu (« la salle de création »), pas le point de la carte.
+            val destination = RobotDestination.END_OF_JOURNEY
+            val guideDestination = destination.spokenLabel(language.code)
+                .takeIf { destination.mapPoint(prefs) != null && RobotController.available.value }
+            guideEnabledForSession = guideDestination != null
+            navigationRequestedByAgent = false
+
             try {
                 val res = ApiClient.service.startSession(
                     StartSessionRequest(
@@ -167,6 +212,7 @@ class SessionViewModel(application: Application) : AndroidViewModel(application)
                         brand = Brand.active.id,
                         ownerEmail = ownerEmail,
                         avatar = avatar,
+                        guideDestination = guideDestination,
                     )
                 )
 
@@ -253,6 +299,15 @@ class SessionViewModel(application: Application) : AndroidViewModel(application)
                 "formulas_generated" -> {
                     _formulas.value = Formula.parseList(root["formulas"])
                     _sessionState.value = SessionState.COMPLETED
+                }
+
+                "robot_navigate" -> {
+                    // L'agent a obtenu l'accord du visiteur : le robot part vers le lieu configuré.
+                    val goal = RobotDestination.END_OF_JOURNEY.mapPoint(prefs)
+                    if (guideEnabledForSession && !goal.isNullOrBlank()) {
+                        navigationRequestedByAgent = true
+                        RobotController.navigateTo(goal)
+                    }
                 }
 
                 "formula_selected" -> {
@@ -396,6 +451,8 @@ class SessionViewModel(application: Application) : AndroidViewModel(application)
         _pendingClickAnswer.value = null
         _pendingPerfumeName.value = null
         _confirmationData.value = null
+        guideEnabledForSession = false
+        navigationRequestedByAgent = false
     }
 
     /** Portage de handleConnectionTimeout() : un seul retry, sinon abandon. */

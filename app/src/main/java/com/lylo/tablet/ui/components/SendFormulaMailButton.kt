@@ -39,7 +39,6 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.window.Dialog
 import com.lylo.tablet.R
 import com.lylo.tablet.data.remote.ApiClient
 import com.lylo.tablet.data.remote.SendFormulaMailRequest
@@ -126,7 +125,7 @@ fun SendFormulaMailButton(
 
     if (!open) return
 
-    Dialog(onDismissRequest = { close() }) {
+    LyloDialog(onDismissRequest = { close() }) {
         Column(
             modifier = Modifier
                 .widthIn(max = 384.dp)

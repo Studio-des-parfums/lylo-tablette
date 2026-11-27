@@ -60,6 +60,7 @@ class LiveKitSessionManager(
     private var eventJob: Job? = null
     private var pendingClickJob: Job? = null
     private var pendingPerfumeNameJob: Job? = null
+    private var guideControlJob: Job? = null
 
     // État réel du micro local, partagé par toutes les BottomBar (une par écran) — portage du
     // useState initialisé depuis la track micro + synchronisé sur TrackMuted/TrackUnmuted côté web :
@@ -91,6 +92,7 @@ class LiveKitSessionManager(
         observeRoomEvents(newRoom)
         observePendingClickAnswer(newRoom)
         observePendingPerfumeName(newRoom)
+        observeGuideControlMessages(newRoom)
         startConnectionTimeoutWatchdog(newRoom)
     }
 
@@ -98,6 +100,7 @@ class LiveKitSessionManager(
         eventJob?.cancel()
         pendingClickJob?.cancel()
         pendingPerfumeNameJob?.cancel()
+        guideControlJob?.cancel()
         timeoutJob?.cancel()
         room?.disconnect()
         room?.release()
@@ -204,6 +207,13 @@ class LiveKitSessionManager(
      * Portage de PerfumeNameController : dès que SessionViewModel expose un nom de parfum saisi
      * (étape asking_perfume_name), on l'envoie sur le control channel puis on le vide.
      */
+    /** Accompagnement robot : départ manuel / arrivée / échec relayés à l'agent. */
+    private fun observeGuideControlMessages(room: Room) {
+        guideControlJob = scope.launch {
+            sessionViewModel.guideControlMessages.collect { payload -> sendControlMessage(room, payload) }
+        }
+    }
+
     private fun observePendingPerfumeName(room: Room) {
         pendingPerfumeNameJob = scope.launch {
             sessionViewModel.pendingPerfumeName.collect { name ->

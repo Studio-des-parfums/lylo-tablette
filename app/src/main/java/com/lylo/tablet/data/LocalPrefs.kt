@@ -52,5 +52,7 @@ class LocalPrefs(context: Context) {
         const val KEY_AUTH_USER = "auth_user"
         /** Point de la carte du robot vers lequel l'envoyer depuis l'écran de formule. */
         const val KEY_ROBOT_GOAL = "robot_goal"
+        const val KEY_GREETING_ENABLED = "robot_greeting_enabled"
+        const val KEY_GREETING_COOLDOWN_S = "robot_greeting_cooldown_s"
     }
 }

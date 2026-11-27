@@ -365,13 +365,26 @@
 
     <!-- Robot -->
     <string name="robot_settings_title">Настройки робота</string>
-    <string name="robot_settings_subtitle">Выберите точку на карте, к которой робот поедет с экрана формулы.</string>
-    <string name="robot_settings_current">Выбранная точка: %1$s</string>
+    <string name="robot_settings_subtitle">Выберите для каждого места точку на карте, куда поедет робот.</string>
+    <string name="robot_settings_current">%1$s → точка на карте: %2$s</string>
+    <string name="robot_settings_destinations">Места</string>
+    <string name="robot_destination_creation_room">Зал создания ароматов</string>
     <string name="robot_settings_none">нет</string>
     <string name="robot_settings_unavailable">Робот не подключён: на этом планшете нет сервисов робота.</string>
     <string name="robot_settings_empty">На активной карте робота нет сохранённых точек.</string>
     <string name="robot_settings_clear">Убрать выбранную точку</string>
-    <string name="robot_go_button">Отправить робота к выбранной точке</string>
+    <string name="robot_settings_greeting">Голосовое приветствие</string>
+    <string name="robot_settings_greeting_hint">Воспроизводит сообщение, когда кто-то подходит, на главной странице.</string>
+    <string name="robot_settings_greeting_frequency">Частота</string>
+    <string name="robot_settings_greeting_always">Каждый раз</string>
+    <string name="robot_settings_greeting_every_s">Каждые %1$d с</string>
+    <string name="robot_settings_greeting_every_min">Каждые %1$d мин</string>
+    <string name="robot_settings_greeting_every_minute">Каждую минуту</string>
+    <string name="robot_settings_return_charge">Вернуться на зарядку</string>
+    <string name="robot_settings_return_charge_sent">Робот возвращается на зарядку.</string>
+    <string name="robot_settings_return_charge_failed">Не удалось отправить робота на зарядную станцию.</string>
+    <string name="robot_go_button">Проводи меня</string>
+    <string name="robot_go_moving">В пути…</string>
     <string name="robot_go_arrived">Робот прибыл.</string>
     <string name="robot_go_failed">Робот не смог переместиться: %1$s</string>
 </resources>

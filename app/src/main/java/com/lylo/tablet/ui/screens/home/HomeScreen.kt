@@ -75,6 +75,15 @@ fun HomeScreen(
     val strings = LocalStringResolver.current
 
     LaunchedEffect(Unit) { onEnterSessionCleanup() }
+    // Message d'accueil vocal à la détection d'une personne : uniquement sur cette page.
+    LaunchedEffect(currentLanguage) { com.lylo.tablet.robot.GreetingPlayer.language = currentLanguage.code }
+    androidx.compose.runtime.DisposableEffect(Unit) {
+        com.lylo.tablet.robot.GreetingPlayer.enabled = true
+        onDispose {
+            com.lylo.tablet.robot.GreetingPlayer.enabled = false
+            com.lylo.tablet.robot.GreetingPlayer.stop()
+        }
+    }
 
     Column(modifier = Modifier.fillMaxSize()) {
         Navbar(
