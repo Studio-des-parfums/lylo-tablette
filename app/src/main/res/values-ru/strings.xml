@@ -377,6 +377,7 @@
     <string name="robot_settings_greeting_always">Каждый раз</string>
     <string name="robot_settings_greeting_every_s">Каждые %1$d с</string>
     <string name="robot_settings_greeting_every_min">Каждые %1$d мин</string>
+    <string name="robot_settings_greeting_every_minute">Каждую минуту</string>
     <string name="robot_settings_return_charge">Вернуться на зарядку</string>
     <string name="robot_settings_return_charge_sent">Робот возвращается на зарядку.</string>
     <string name="robot_settings_return_charge_failed">Не удалось отправить робота на зарядную станцию.</string>

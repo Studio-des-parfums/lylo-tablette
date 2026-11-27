@@ -377,6 +377,7 @@
     <string name="robot_settings_greeting_always">في كل مرة</string>
     <string name="robot_settings_greeting_every_s">كل %1$d ث</string>
     <string name="robot_settings_greeting_every_min">كل %1$d د</string>
+    <string name="robot_settings_greeting_every_minute">كل دقيقة</string>
     <string name="robot_settings_return_charge">العودة إلى نقطة الشحن</string>
     <string name="robot_settings_return_charge_sent">يعود الروبوت للشحن.</string>
     <string name="robot_settings_return_charge_failed">تعذّر إرسال الروبوت إلى محطة الشحن.</string>

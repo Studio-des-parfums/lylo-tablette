@@ -76,6 +76,7 @@ import com.lylo.tablet.ui.components.FormulaQrCode
 import com.lylo.tablet.ui.components.Navbar
 import com.lylo.tablet.ui.components.PrimaryPillButton
 import com.lylo.tablet.robot.RobotController
+import com.lylo.tablet.robot.VoicePlayer
 import com.lylo.tablet.ui.components.RobotGoButton
 import com.lylo.tablet.ui.components.RoundIconButton
 import com.lylo.tablet.ui.components.RoundIconStyle
@@ -238,6 +239,10 @@ private fun FormulaJourney(
 
     if (formulas.isEmpty()) return
     val selectedFormula = chosen?.let { formulas.getOrNull(it) }
+    // Formule finale affichée : audio qui présente les boutons (imprimer, QR, mail, Emmène-moi…).
+    LaunchedEffect(chosen) {
+        if (chosen != null) VoicePlayer.play(VoicePlayer.Cue.FORMULA_INTRO, language.code)
+    }
 
     Box(modifier = Modifier.fillMaxSize().background(LyloBackgroundLight)) {
         // Halo décoratif (opacity-5 côté web)
@@ -451,12 +456,16 @@ private fun FormulaJourney(
                                     onClick = {},
                                 )
                             }
-                            RobotGoButton()
+                            RobotGoButton(voiceLanguage = language.code)
                             PrimaryPillButton(
                                 text = if (participant != null && !isLastParticipant) strings.get(R.string.quiz_results_next_person) else strings.get(R.string.quiz_results_finish),
                                 onClick = {
                                     // Dernière personne : le robot retourne à sa station de recharge.
-                                    if (participant == null || isLastParticipant) RobotController.returnToCharge()
+                                    if (participant == null || isLastParticipant) {
+                                        // « Merci, passez une excellente journée »
+                                        VoicePlayer.play(VoicePlayer.Cue.GOODBYE, language.code)
+                                        RobotController.returnToCharge()
+                                    }
                                     (onFinish ?: onExit)()
                                 },
                                 modifier = Modifier.padding(start = 4.dp),

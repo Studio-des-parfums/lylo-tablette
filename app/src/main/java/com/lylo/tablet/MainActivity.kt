@@ -118,7 +118,9 @@ private fun LyloApp() {
         ) {
             // Android 15 (targetSdk 35) impose l'affichage bord à bord : sans ce padding, la navbar
             // passe sous la barre d'état et la TechBar sous la barre de navigation.
-            Box(modifier = Modifier.fillMaxSize().background(LyloBackgroundLight).systemBarsPadding()) {
+            // Robot OrionStar : la ROM dessine sous la barre d'état un second bandeau (micro, réseau,
+            // batterie) par-dessus l'app ; on décale le contenu pour qu'il ne masque pas la navbar.
+            Box(modifier = Modifier.fillMaxSize().background(LyloBackgroundLight).systemBarsPadding().padding(top = ROBOT_OVERLAY_TOP_DP.dp)) {
             if (!micGranted && !permissionRequested) {
                 PermissionGateScreen(
                     onRequest = {
@@ -196,3 +198,6 @@ private fun WithMinSmallestWidth(content: @Composable () -> Unit) {
         content()
     }
 }
+
+/** Hauteur du bandeau de la ROM OrionStar sous la barre d'état (≈ 45 px à 1,5×). */
+private const val ROBOT_OVERLAY_TOP_DP = 32

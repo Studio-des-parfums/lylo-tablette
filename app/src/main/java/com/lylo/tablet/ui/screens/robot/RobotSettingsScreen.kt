@@ -174,6 +174,7 @@ fun RobotSettingsScreen(
                         val label = when {
                             seconds == 0 -> strings.get(R.string.robot_settings_greeting_always)
                             seconds < 60 -> strings.get(R.string.robot_settings_greeting_every_s, seconds)
+                            seconds == 60 -> strings.get(R.string.robot_settings_greeting_every_minute)
                             else -> strings.get(R.string.robot_settings_greeting_every_min, seconds / 60)
                         }
                         val isSelected = cooldown == seconds

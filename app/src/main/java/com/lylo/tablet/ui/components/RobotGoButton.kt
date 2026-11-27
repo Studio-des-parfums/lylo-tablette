@@ -1,5 +1,7 @@
 package com.lylo.tablet.ui.components
 
+import com.lylo.tablet.robot.VoicePlayer
+
 import android.widget.Toast
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.SmartToy
@@ -23,7 +25,11 @@ import com.lylo.tablet.robot.RobotController.NavigationState
  * sur le robot.
  */
 @Composable
-fun RobotGoButton(modifier: Modifier = Modifier) {
+fun RobotGoButton(
+    modifier: Modifier = Modifier,
+    /** Langue des audios de guidage ; null = pas d'audio (mode vocal : l'agent parle déjà). */
+    voiceLanguage: String? = null,
+) {
     val strings = LocalStringResolver.current
     val context = LocalContext.current
     val goal = remember { LocalPrefs(context).getString(LocalPrefs.KEY_ROBOT_GOAL) }
@@ -32,7 +38,11 @@ fun RobotGoButton(modifier: Modifier = Modifier) {
 
     LaunchedEffect(navigation) {
         val message = when (val state = navigation) {
-            is NavigationState.Arrived -> strings.get(R.string.robot_go_arrived)
+            is NavigationState.Arrived -> {
+                // « Nous y voilà… cliquez sur Terminer »
+                voiceLanguage?.let { VoicePlayer.play(VoicePlayer.Cue.GUIDE_ARRIVED, it) }
+                strings.get(R.string.robot_go_arrived)
+            }
             is NavigationState.Failed -> strings.get(R.string.robot_go_failed, state.message)
             else -> null
         }
@@ -47,7 +57,11 @@ fun RobotGoButton(modifier: Modifier = Modifier) {
     val moving = navigation is NavigationState.Moving
     PrimaryPillButton(
         text = strings.get(if (moving) R.string.robot_go_moving else R.string.robot_go_button),
-        onClick = { RobotController.navigateTo(goal) },
+        onClick = {
+            // « Je vous y emmène, suivez-moi »
+            voiceLanguage?.let { VoicePlayer.play(VoicePlayer.Cue.GUIDE_START, it) }
+            RobotController.navigateTo(goal)
+        },
         trailingIcon = Icons.Default.SmartToy,
         enabled = !moving,
         modifier = modifier,

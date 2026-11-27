@@ -377,6 +377,7 @@
     <string name="robot_settings_greeting_always">Cada vez</string>
     <string name="robot_settings_greeting_every_s">Cada %1$d s</string>
     <string name="robot_settings_greeting_every_min">Cada %1$d min</string>
+    <string name="robot_settings_greeting_every_minute">Cada minuto</string>
     <string name="robot_settings_return_charge">Volver a la estación de carga</string>
     <string name="robot_settings_return_charge_sent">El robot vuelve a cargarse.</string>
     <string name="robot_settings_return_charge_failed">No se pudo enviar el robot a su estación de carga.</string>
