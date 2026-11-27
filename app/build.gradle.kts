@@ -127,6 +127,8 @@ dependencies {
 
     // ── SDK robot OrionStar (navigation vers un point de la carte) ───────
     implementation(files("libs/robotservice.jar"))
+    // Requis par robotservice.jar (PersonApi) mais non embarqué dans le jar.
+    implementation("com.google.code.gson:gson:2.11.0")
 
     // ── DataStore (persistance clé/valeur, équivalent localStorage) ─────
     implementation("androidx.datastore:datastore-preferences:1.1.1")
