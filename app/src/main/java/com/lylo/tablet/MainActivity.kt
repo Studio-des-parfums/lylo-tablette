@@ -27,6 +27,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.unit.Density
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.text.style.TextAlign
@@ -56,7 +58,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            LyloApp()
+            WithMinSmallestWidth {
+                LyloApp()
+            }
         }
     }
 
@@ -151,5 +155,31 @@ private fun PermissionGateScreen(onRequest: () -> Unit) {
                 Text(strings.get(R.string.permission_grant))
             }
         }
+    }
+}
+
+/** Largeur minimale garantie (en dp) sur le petit côté de l'écran. */
+private const val MIN_SMALLEST_WIDTH_DP = 720f
+
+/**
+ * Robot OrionStar : l'écran 1920×1080 déclare 560 dpi (densité de téléphone), soit ~549×309 dp —
+ * toute l'UI est agrandie ×3,5. La ROM ignore `wm density`, on corrige donc côté Compose en
+ * réduisant LocalDensity pour garantir au moins [MIN_SMALLEST_WIDTH_DP] sur le petit côté
+ * (1080 px → densité 1,5 → 1280×720 dp). Sans effet sur un écran déjà assez large.
+ *
+ * Pourquoi pas attachBaseContext + densityDpi : les fenêtres des Dialog étaient alors
+ * dimensionnées avec l'ancienne densité et coupaient leur contenu (champ email de la connexion).
+ * Les Dialog Compose héritent de LocalDensity, donc tout reste cohérent ici.
+ */
+@Composable
+private fun WithMinSmallestWidth(content: @Composable () -> Unit) {
+    val metrics = LocalContext.current.resources.displayMetrics
+    val current = LocalDensity.current
+    val shortSidePx = minOf(metrics.widthPixels, metrics.heightPixels)
+    val target = shortSidePx / MIN_SMALLEST_WIDTH_DP
+    if (target in 0f..current.density && target < current.density) {
+        CompositionLocalProvider(LocalDensity provides Density(target, fontScale = 1f), content = content)
+    } else {
+        content()
     }
 }

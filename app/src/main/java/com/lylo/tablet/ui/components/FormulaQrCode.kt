@@ -29,7 +29,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.window.Dialog
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.qrcode.QRCodeWriter
 import com.lylo.tablet.R
@@ -75,7 +74,7 @@ fun FormulaQrCode(
     }
 
     if (open) {
-        Dialog(onDismissRequest = { open = false }) {
+        LyloDialog(onDismissRequest = { open = false }) {
             Column(
                 modifier = Modifier
                     .clip(RoundedCornerShape(20.dp))

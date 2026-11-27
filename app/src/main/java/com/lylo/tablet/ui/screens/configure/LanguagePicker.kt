@@ -30,7 +30,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.window.Dialog
+import com.lylo.tablet.ui.components.LyloDialog
 import com.lylo.tablet.R
 import com.lylo.tablet.i18n.AppLanguage
 import com.lylo.tablet.i18n.LocalStringResolver
@@ -90,7 +90,7 @@ fun LanguagePicker(
     }
 
     if (open) {
-        Dialog(onDismissRequest = { open = false }) {
+        LyloDialog(onDismissRequest = { open = false }) {
             Column(
                 modifier = Modifier
                     .clip(RoundedCornerShape(20.dp))
