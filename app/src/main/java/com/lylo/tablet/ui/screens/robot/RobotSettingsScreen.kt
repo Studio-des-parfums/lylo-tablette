@@ -4,6 +4,7 @@ import android.widget.Toast
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
 import com.lylo.tablet.robot.GreetingPlayer
+import com.lylo.tablet.robot.RobotDestination
 import androidx.compose.material.icons.filled.BatteryChargingFull
 import com.lylo.tablet.ui.components.PrimaryPillButton
 
@@ -79,7 +80,9 @@ fun RobotSettingsScreen(
     if (user == null) return
 
     val available by RobotController.available.collectAsState()
-    var selected by remember { mutableStateOf(prefs.getString(LocalPrefs.KEY_ROBOT_GOAL)) }
+    // Lieu en cours de configuration (une seule salle pour l'instant : « Salle de création »).
+    var destination by remember { mutableStateOf(RobotDestination.END_OF_JOURNEY) }
+    var selected by remember(destination) { mutableStateOf(destination.mapPoint(prefs)) }
     var places by remember { mutableStateOf<List<String>>(emptyList()) }
     var loading by remember { mutableStateOf(false) }
     var error by remember { mutableStateOf<String?>(null) }
@@ -98,7 +101,7 @@ fun RobotSettingsScreen(
 
     fun select(place: String?) {
         selected = place
-        prefs.putString(LocalPrefs.KEY_ROBOT_GOAL, place)
+        prefs.putString(destination.prefKey, place)
     }
 
     Box(modifier = Modifier.fillMaxSize().background(LyloBackgroundLight), contentAlignment = Alignment.TopCenter) {
@@ -130,12 +133,6 @@ fun RobotSettingsScreen(
             }
 
             Text(strings.get(R.string.robot_settings_subtitle), style = MaterialTheme.typography.bodyMedium, color = Color(0xFF6B7280))
-            Text(
-                strings.get(R.string.robot_settings_current, selected ?: strings.get(R.string.robot_settings_none)),
-                style = MaterialTheme.typography.bodyMedium,
-                fontWeight = FontWeight.SemiBold,
-                color = LyloPrimary,
-            )
 
             // Message vocal d'accueil (détection d'une personne sur la page d'accueil)
             var greetingOn by remember { mutableStateOf(GreetingPlayer.soundEnabled) }
@@ -211,6 +208,39 @@ fun RobotSettingsScreen(
                     trailingIcon = Icons.Default.BatteryChargingFull,
                 )
             }
+
+            // ── Lieux nommés : chaque salle est associée à un point de la carte ──
+            Text(
+                strings.get(R.string.robot_settings_destinations),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
+                color = LyloPrimary,
+                modifier = Modifier.padding(top = 8.dp),
+            )
+            if (RobotDestination.entries.size > 1) {
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    RobotDestination.entries.forEach { d ->
+                        val active = d == destination
+                        Text(
+                            strings.get(d.labelRes),
+                            style = MaterialTheme.typography.labelLarge,
+                            color = if (active) Color.White else LyloPrimary,
+                            modifier = Modifier
+                                .clip(RoundedCornerShape(999.dp))
+                                .background(if (active) LyloPrimary else Color.White)
+                                .border(1.dp, LyloPrimary.copy(alpha = if (active) 1f else 0.25f), RoundedCornerShape(999.dp))
+                                .clickable { destination = d }
+                                .padding(horizontal = 14.dp, vertical = 8.dp),
+                        )
+                    }
+                }
+            }
+            Text(
+                strings.get(R.string.robot_settings_current, strings.get(destination.labelRes), selected ?: strings.get(R.string.robot_settings_none)),
+                style = MaterialTheme.typography.bodyMedium,
+                fontWeight = FontWeight.SemiBold,
+                color = LyloPrimary,
+            )
 
             when {
                 !available -> Text(strings.get(R.string.robot_settings_unavailable), color = Color(0xFFDC2626))

@@ -240,8 +240,14 @@ private fun FormulaJourney(
     if (formulas.isEmpty()) return
     val selectedFormula = chosen?.let { formulas.getOrNull(it) }
     // Formule finale affichée : audio qui présente les boutons (imprimer, QR, mail, Emmène-moi…).
-    LaunchedEffect(chosen) {
-        if (chosen != null) VoicePlayer.play(VoicePlayer.Cue.FORMULA_INTRO, language.code)
+    // Seulement à l'arrivée sur la page pyramide (après « Continuer »), pas au simple choix d'une
+    // carte ; une fois par personne (pas à chaque aller-retour entre les cartes et la pyramide).
+    var formulaIntroPlayed by remember { mutableStateOf(false) }
+    LaunchedEffect(confirmed, chosen) {
+        if (confirmed && chosen != null && !formulaIntroPlayed) {
+            formulaIntroPlayed = true
+            VoicePlayer.play(VoicePlayer.Cue.FORMULA_INTRO, language.code)
+        }
     }
 
     Box(modifier = Modifier.fillMaxSize().background(LyloBackgroundLight)) {

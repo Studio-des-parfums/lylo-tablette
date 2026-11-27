@@ -365,8 +365,10 @@
 
     <!-- Robot -->
     <string name="robot_settings_title">Настройки робота</string>
-    <string name="robot_settings_subtitle">Выберите точку на карте, к которой робот поедет с экрана формулы.</string>
-    <string name="robot_settings_current">Выбранная точка: %1$s</string>
+    <string name="robot_settings_subtitle">Выберите для каждого места точку на карте, куда поедет робот.</string>
+    <string name="robot_settings_current">%1$s → точка на карте: %2$s</string>
+    <string name="robot_settings_destinations">Места</string>
+    <string name="robot_destination_creation_room">Зал создания ароматов</string>
     <string name="robot_settings_none">нет</string>
     <string name="robot_settings_unavailable">Робот не подключён: на этом планшете нет сервисов робота.</string>
     <string name="robot_settings_empty">На активной карте робота нет сохранённых точек.</string>

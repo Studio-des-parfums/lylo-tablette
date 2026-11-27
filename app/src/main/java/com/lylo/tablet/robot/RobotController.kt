@@ -12,7 +12,10 @@ import com.ainirobot.coreservice.client.module.ModuleCallbackApi
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharedFlow
+import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -59,6 +62,21 @@ object RobotController {
 
     private val _navigation = MutableStateFlow<NavigationState>(NavigationState.Idle)
     val navigation: StateFlow<NavigationState> = _navigation.asStateFlow()
+
+    /**
+     * Chaque départ / arrivée / échec, sans perte : contrairement à [navigation] (StateFlow qui
+     * ne garde que la dernière valeur, remise à Idle dès le toast affiché), utilisé pour
+     * prévenir l'agent vocal (SessionViewModel).
+     */
+    private val _navigationEvents = MutableSharedFlow<NavigationState>(extraBufferCapacity = 8)
+    val navigationEvents: SharedFlow<NavigationState> = _navigationEvents.asSharedFlow()
+
+    private var navigationValue: NavigationState
+        get() = _navigation.value
+        set(value) {
+            _navigation.value = value
+            if (value !is NavigationState.Idle) _navigationEvents.tryEmit(value)
+        }
 
     sealed interface NavigationState {
         data object Idle : NavigationState
@@ -217,10 +235,10 @@ object RobotController {
     fun navigateTo(goal: String) {
         if (_navigation.value is NavigationState.Moving) return
         if (!_available.value) {
-            _navigation.value = NavigationState.Failed(goal, "Le contrôle du robot n'est pas disponible.")
+            navigationValue = NavigationState.Failed(goal, "Le contrôle du robot n'est pas disponible.")
             return
         }
-        _navigation.value = NavigationState.Moving(goal)
+        navigationValue = NavigationState.Moving(goal)
 
         fetchPlaces { places, error ->
             val resolved = when {
@@ -229,7 +247,7 @@ object RobotController {
                     ?: places.firstOrNull { normalize(it) == normalize(goal) }
             }
             if (resolved == null) {
-                _navigation.value = NavigationState.Failed(
+                navigationValue = NavigationState.Failed(
                     goal,
                     error ?: "Le point \"$goal\" est introuvable sur la carte active.",
                 )
@@ -285,12 +303,12 @@ object RobotController {
         @Suppress("DEPRECATION")
         runCatching { robotApi.stopNavigation(NAVIGATION_REQUEST_ID) }
             .onFailure { Log.w(TAG, "stopNavigation failed", it) }
-        _navigation.value = NavigationState.Idle
+        navigationValue = NavigationState.Idle
     }
 
     /** Remet l'état à Idle une fois le résultat affiché. */
     fun clearNavigationResult() {
-        if (_navigation.value !is NavigationState.Moving) _navigation.value = NavigationState.Idle
+        if (_navigation.value !is NavigationState.Moving) navigationValue = NavigationState.Idle
     }
 
     private fun startNavigation(goal: String) {
@@ -304,7 +322,7 @@ object RobotController {
                 object : ActionListener() {
                     override fun onResult(status: Int, responseString: String?, extraData: String?) {
                         Log.d(TAG, "Navigation result goal=$goal status=$status response=$responseString")
-                        _navigation.value = if (responseString == "true") {
+                        navigationValue = if (responseString == "true") {
                             NavigationState.Arrived(goal)
                         } else {
                             NavigationState.Failed(goal, responseString ?: extraData ?: "Navigation terminée sans succès.")
@@ -314,7 +332,7 @@ object RobotController {
                     @Deprecated("Deprecated in robot SDK")
                     override fun onError(errorCode: Int, errorString: String?) {
                         Log.w(TAG, "Navigation error goal=$goal code=$errorCode message=$errorString")
-                        _navigation.value = NavigationState.Failed(goal, errorString ?: errorMessage(goal, errorCode))
+                        navigationValue = NavigationState.Failed(goal, errorString ?: errorMessage(goal, errorCode))
                     }
 
                     @Deprecated("Deprecated in robot SDK")
@@ -324,11 +342,11 @@ object RobotController {
                 },
             )
             if (code < 0) {
-                _navigation.value = NavigationState.Failed(goal, errorMessage(goal, code))
+                navigationValue = NavigationState.Failed(goal, errorMessage(goal, code))
             }
         }.onFailure {
             Log.e(TAG, "Unable to start navigation goal=$goal", it)
-            _navigation.value = NavigationState.Failed(goal, it.message ?: "Impossible de lancer la navigation.")
+            navigationValue = NavigationState.Failed(goal, it.message ?: "Impossible de lancer la navigation.")
         }
     }
 

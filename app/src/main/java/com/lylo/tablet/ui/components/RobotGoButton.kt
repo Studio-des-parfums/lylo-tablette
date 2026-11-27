@@ -32,7 +32,7 @@ fun RobotGoButton(
 ) {
     val strings = LocalStringResolver.current
     val context = LocalContext.current
-    val goal = remember { LocalPrefs(context).getString(LocalPrefs.KEY_ROBOT_GOAL) }
+    val goal = remember { com.lylo.tablet.robot.RobotDestination.END_OF_JOURNEY.mapPoint(LocalPrefs(context)) }
     val available by RobotController.available.collectAsState()
     val navigation by RobotController.navigation.collectAsState()
 

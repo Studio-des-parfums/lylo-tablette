@@ -365,8 +365,10 @@
 
     <!-- Robot -->
     <string name="robot_settings_title">Roboter-Einstellungen</string>
-    <string name="robot_settings_subtitle">Wählen Sie den Kartenpunkt, zu dem der Roboter vom Formelbildschirm aus fährt.</string>
-    <string name="robot_settings_current">Ausgewählter Punkt: %1$s</string>
+    <string name="robot_settings_subtitle">Wählen Sie für jeden Ort den Kartenpunkt, zu dem der Roboter fährt.</string>
+    <string name="robot_settings_current">%1$s → Kartenpunkt: %2$s</string>
+    <string name="robot_settings_destinations">Orte</string>
+    <string name="robot_destination_creation_room">Kreationsraum</string>
     <string name="robot_settings_none">keiner</string>
     <string name="robot_settings_unavailable">Der Roboter ist nicht verbunden: Dieses Tablet hat keine Roboterdienste.</string>
     <string name="robot_settings_empty">Keine Punkte auf der aktiven Karte des Roboters gespeichert.</string>

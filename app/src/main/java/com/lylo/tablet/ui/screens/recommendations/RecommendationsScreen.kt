@@ -53,7 +53,6 @@ import com.lylo.tablet.ui.components.FormulaQrCode
 import com.lylo.tablet.ui.components.Navbar
 import com.lylo.tablet.ui.components.PrimaryPillButton
 import com.lylo.tablet.robot.RobotController
-import com.lylo.tablet.ui.components.RobotGoButton
 import com.lylo.tablet.ui.components.RoundIconButton
 import com.lylo.tablet.ui.components.SendFormulaMailButton
 import com.lylo.tablet.ui.components.TranscriptPanel
@@ -183,7 +182,8 @@ fun RecommendationsScreen(
                                     onClick = {},
                                 )
                             }
-                            RobotGoButton()
+                            // Pas de bouton « Emmène-moi » en mode vocal : l'IA propose elle-même
+                            // l'accompagnement en fin de parcours (capacité guide_destination).
                             // Terminer : fin de session et retour à l'accueil
                             PrimaryPillButton(
                                 text = strings.get(R.string.quiz_results_finish),

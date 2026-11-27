@@ -365,8 +365,10 @@
 
     <!-- Robot -->
     <string name="robot_settings_title">إعدادات الروبوت</string>
-    <string name="robot_settings_subtitle">اختر نقطة الخريطة التي يتوجه إليها الروبوت من شاشة التركيبة.</string>
-    <string name="robot_settings_current">النقطة المحددة: %1$s</string>
+    <string name="robot_settings_subtitle">اختر لكل مكان نقطة الخريطة التي يتوجه إليها الروبوت.</string>
+    <string name="robot_settings_current">%1$s ← نقطة الخريطة: %2$s</string>
+    <string name="robot_settings_destinations">الأماكن</string>
+    <string name="robot_destination_creation_room">غرفة الإبداع</string>
     <string name="robot_settings_none">لا شيء</string>
     <string name="robot_settings_unavailable">الروبوت غير متصل: هذا الجهاز اللوحي لا يحتوي على خدمات الروبوت.</string>
     <string name="robot_settings_empty">لا توجد نقاط محفوظة على الخريطة النشطة للروبوت.</string>

@@ -54,8 +54,11 @@ object VoicePlayer {
                             .build(),
                     )
                     setDataSource(fd.fileDescriptor, fd.startOffset, fd.length)
-                    setOnCompletionListener { release() }
-                    setOnErrorListener { _, _, _ -> release(); true }
+                    // this@VoicePlayer : dans ce bloc `apply`, un simple release() visait
+                    // MediaPlayer.release() — le lecteur restait marqué « en cours » et bloquait
+                    // tous les messages d'accueil suivants.
+                    setOnCompletionListener { this@VoicePlayer.release() }
+                    setOnErrorListener { _, _, _ -> this@VoicePlayer.release(); true }
                     prepare()
                     start()
                 }

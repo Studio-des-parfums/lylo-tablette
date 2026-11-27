@@ -365,8 +365,10 @@
 
     <!-- Robot -->
     <string name="robot_settings_title">Configuración del robot</string>
-    <string name="robot_settings_subtitle">Elija el punto del mapa al que va el robot desde la pantalla de fórmula.</string>
-    <string name="robot_settings_current">Punto seleccionado: %1$s</string>
+    <string name="robot_settings_subtitle">Elija, para cada lugar, el punto del mapa al que va el robot.</string>
+    <string name="robot_settings_current">%1$s → punto del mapa: %2$s</string>
+    <string name="robot_settings_destinations">Lugares</string>
+    <string name="robot_destination_creation_room">Sala de creación</string>
     <string name="robot_settings_none">ninguno</string>
     <string name="robot_settings_unavailable">El robot no está conectado: esta tableta no tiene los servicios del robot.</string>
     <string name="robot_settings_empty">No hay puntos guardados en el mapa activo del robot.</string>
